@@ -1,14 +1,15 @@
 const page = {
-  backgroundColor: 'whitesmoke', 
+  backgroundImage: "linear-gradient(to right, ghostWhite, gray, ghostWhite 2%, gainsboro, whiteSmoke, white, ghostWhite 75%, whiteSmoke, lightGray)",
   padding: 50,
+  border: '1px solid gainsboro',
   paddingTop: 35,
   width: 540, 
   height: 650, 
   marginLeft: 'auto', 
   marginRight: 'auto', 
   marginTop: 50,
-  borderRadius: "0px 10px 10px 0px",
-  boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.4)"
+  borderRadius: "0px 10px 10px 5px",
+  boxShadow: "4px 4px 5px 0px rgba(0,0,0,0.2)"
 }
 
 const cover = {
@@ -32,7 +33,6 @@ const link = {
   display: 'flex',
   alignItems:'center',
   justifyContent: 'center',
-  margin: 10
 }
 
 const coverPic = {
@@ -59,9 +59,27 @@ const image = {
   marginBottom: 20
 }
 
-const form = {
-  margin: 20,
-  textAlign: 'center'
+const bookmark = {
+  height: 50,
+  width: 100,
+  backgroundColor: 'lightBlue',
+  display: 'block',
+  marginLeft: 'auto', 
+  marginRight: 'auto',
+  boxShadow: "2px 2px 5px 0px rgba(0,0,0,0.5)",
+  borderRadius: "5px 5px 0 0",
+  padding: 10
+}
+
+const formField = {
+  display: 'block',
+  marginLeft: 'auto', 
+  marginRight: 'auto',
+  border: 'none',
+  backgroundColor: 'smokewhite',
+  width: 80,
+  height: 40,
+  boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
 }
 
 export const styles = {
@@ -71,5 +89,6 @@ export const styles = {
   underline,
   image,
   link,
-  form
+  bookmark,
+  formField
 };

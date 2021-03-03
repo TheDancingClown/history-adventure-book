@@ -27,8 +27,8 @@ const Cover = (props) => {
   }
 
   const handleSubmit = (event) => {
-    if(bookmark > pages.length-1) {
-      alert(`There are only ${pages.length-1} pages in the book`)
+    if(bookmark > pages.length) {
+      alert(`There are only ${pages.length} pages in the book`)
     } else if (bookmark < 1) {
       alert("Enter a positive number")
     } else {
@@ -39,14 +39,12 @@ const Cover = (props) => {
 
   return (
     <div className="wrapper">
-      <form style={ styles.form} onSubmit={ handleSubmit }>
-        <label>
-          Click the cover to begin or enter a page number to resume
-        </label>
-        <br/>
-        <input name="page-number" type="text" onChange={ handleChange } />
-        <input type="submit" value={`Go to page ${bookmark}`} />
-      </form>
+      <div style={ styles.bookmark }>
+        <form onSubmit={ handleSubmit }>
+          <input style={ styles.formField} name="page-number" type="number" onChange={ handleChange } />
+          {/* <input type="submit" value={`Go to page ${bookmark}`} /> */}
+        </form>
+      </div>
       <A style={ styles.link } href={`/books/${props.id}/pages/${page}`}>
         <div style={ styles.cover }>
           <h1>{ book.title }</h1>
