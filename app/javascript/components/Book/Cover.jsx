@@ -6,7 +6,7 @@ import { A, navigate } from 'hookrouter'
 
 import { styles } from './styles';
 
-const Book = (props) => {
+const Cover = (props) => {
   const book = useSelector(state => state.book.book)
   const pages = useSelector(state => state.book.pages)
   const page = useSelector(state => state.book.currentPage)
@@ -52,10 +52,11 @@ const Book = (props) => {
           <h1>{ book.title }</h1>
           <div style={ styles.underline }/>
           <img style={ styles.coverPic } src={ book.cover_picture }/>
+          <h2>by Paul Kirkham</h2>
         </div>
       </A>
     </div>
   )
 };
 
-export default Book;
+export default Cover;

@@ -24,7 +24,7 @@ const Page = (props) => {
         <A 
           href={`/books/${ props.book }/pages/${ page }`}
           onClick={ () => dispatch(turnPage(page))}
-          style={{ textDecoration: 'none' }}>
+          style={ styles.link }>
           { options[page] }
         </A>
       </div>

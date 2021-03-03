@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-books = Book.create([{ title: "Elizabeth I & The Spanish Armada", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Invincible_Armada.jpg/1200px-Invincible_Armada.jpg"}])
+books = Book.create([{ title: "Elizabeth I & The Spanish Armada", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Invincible_Armada.jpg/1200px-Invincible_Armada.jpg"}, { title: "Henry VIII", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg/340px-Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg"}])
 
 Page.create(
   page_number: 1, 
@@ -458,6 +458,7 @@ Page.create(
   options: {
     "120": "Go back",
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/St_George_and_the_Dragon_Verona_ms_1853_26r.jpg/580px-St_George_and_the_Dragon_Verona_ms_1853_26r.jpg",
   book: books.first
 )
 
@@ -712,6 +713,7 @@ Page.create(
   options: {
     "116": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Invincible_Armada.jpg/1200px-Invincible_Armada.jpg",
   book: books.first
 )
 
@@ -725,6 +727,7 @@ Page.create(
     "83": "If you think that the Armada was first seen on 1st August 1588",
     "103": "If you think that the Armada was first seen on 19th July 1589"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cornwall_UK_mainland_location_map.svg/480px-Cornwall_UK_mainland_location_map.svg.png",
   book: books.first
 )
 
@@ -793,17 +796,6 @@ Page.create(
 )
 
 Page.create(
-  page_number: 59,
-  content: [
-    "Portsmouth would be a good place in which to anchor the English navy. It was sheltered harbour and is situated on the south coast from where it could defend the English Channel. However, in 1588, the English navy was not at Portsmouth."
-  ],
-  options: {
-    "102": "Go back and keep the ships in another port"
-  },
-  book: books.first
-)
-
-Page.create(
   page_number: 60,
   content: [
     "This is almost the correct answer. Santa Cruz was the leader of the Spanish navy and he had been the one who was chosen by Philip to lead the Armada.",
@@ -812,6 +804,7 @@ Page.create(
   options: {
     "36": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg/440px-%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg",
   book: books.first
 )
 
@@ -969,6 +962,7 @@ Page.create(
   options: {
     "36": "Go back and hope that you still receive a Christmas present this year"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/340px-Jonathan_G_Meath_portrays_Santa_Claus.jpg",
   book: books.first
 )
 
@@ -993,6 +987,7 @@ Page.create(
   options: {
     "120": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hippocampus.jpg/440px-Hippocampus.jpg",
   book: books.first
 )
 
@@ -1398,6 +1393,7 @@ Page.create(
     "30": "If you think that Medina Sidonia was in the navy",
     "50": "If you think that Medina Sidonia was in the air force"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Alonso_P%C3%A9rez_de_Guzm%C3%A1n.jpg/440px-Alonso_P%C3%A9rez_de_Guzm%C3%A1n.jpg",
   book: books.first
 )
 

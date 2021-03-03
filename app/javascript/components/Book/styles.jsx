@@ -1,6 +1,7 @@
 const page = {
   backgroundColor: 'whitesmoke', 
-  padding: 50, 
+  padding: 50,
+  paddingTop: 35,
   width: 540, 
   height: 650, 
   marginLeft: 'auto', 
@@ -11,7 +12,7 @@ const page = {
 }
 
 const cover = {
-  backgroundImage: "linear-gradient(to right, maroon, black 2%, darkRed 7%)",
+  backgroundImage: "linear-gradient(to right, darkRed, maroon 2%, brown, darkRed, brown 7%)",
   width: 500, 
   height: 600,
   borderRadius: "5px 10px 10px 5px",
@@ -20,12 +21,18 @@ const cover = {
   marginRight: 'auto',
   textAlign: 'center',
   color: 'goldenrod',
+  fontFamily: 'SignPainter',
   boxShadow: "4px 4px 5px 0px rgba(0,0,0,0.8)",
   border: '1px solid gray',
 }
 
 const link = {
-  textDecoration: 'none'
+  textDecoration: 'none',
+  color: 'black',
+  display: 'flex',
+  alignItems:'center',
+  justifyContent: 'center',
+  margin: 10
 }
 
 const coverPic = {
