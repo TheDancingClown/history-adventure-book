@@ -3,11 +3,13 @@ import { useSelector, useDispatch } from 'react-redux'
 import { A } from 'hookrouter'
 import { turnPage } from '../../features/book/bookSlice'
 
+import { styles } from './styles'
+
 const Page = (props) => {
   const dispatch = useDispatch();
   const pages = useSelector(state => state.book.pages);
   const currentPage = pages.filter(item => item.attributes.page_number === parseInt(props.page))
-  const { content, options } = currentPage[0].attributes
+  const { content, options, image_url } = currentPage[0].attributes
   
   const paragraphs = content.map((item, index) => {
     return (
@@ -30,9 +32,10 @@ const Page = (props) => {
   });
 
   return (
-    <div className="wrapper" style={{ width: 500, marginLeft: 'auto', marginRight: 'auto', marginTop: 100 }}>
-      <p style={{ textAlign: 'center' }}>{ props.page}</p>
+    <div className="page" style={ styles.page }>
+      <p style={{ textAlign: 'center', marginTop: 0 }}>{ props.page}</p>
       { paragraphs }
+      <img style={ styles.image } src={ image_url }/>
       { choices }
     </div>
   )

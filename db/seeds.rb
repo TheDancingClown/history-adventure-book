@@ -36,6 +36,7 @@ Page.create(
     "23": "If you think the Catholics objected to the marriage",
     "107": "If you think the Protestants objected to the marriage"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Henry_VIII_and_Anne_Boleyn.png/440px-Henry_VIII_and_Anne_Boleyn.png",
   book: books.first
 )
 
@@ -562,15 +563,13 @@ Page.create(
 Page.create(
   page_number: 42, 
   content: [
-    "The Spanish Armada had been sighted off the Lizard Point. The date was – well never mind about the exact date – let’s just say July 1588.",
-    "The English fleet was not at the Lizard Point. The Lizard Point was far too dangerous and rocky to anchor the English fleet.",
-    "The English fleet was anchored in a much safer harbour many miles away.",
-    "The English fleet and Queen Elizabeth would need to know the news that the Armada had been sighted as soon as possible."
+    "The English eventually managed to sail out of Plymouth harbour. They now pursued the Armada up the English Channel. The Spanish sailed in a crescent formation, which was difficult for Drake to attack.",
+    "There was not really any major battle but there were skirmishes all the way up the Channel when the Spanish were in range of the English canons. The largest skirmish took place as the Spanish sailed round the Isle of Wight.",
+    "The Spanish managed to sail on until night fell."
   ],
   options: {
-    "22": "If you think that the mews was told by telephone",
-    "82": "If you think that the news was told by a messenger",
-    "102": "If you think that the news was told by beacons"
+    "101": "If you think the Spanish anchored at Gravesend",
+    "119": "If you think the Spanish anchored at Gravelines"
   },
   book: books.first
 )
@@ -700,6 +699,7 @@ Page.create(
     "12": "If you think that Henry’s first wife was the mother of Elizabeth",
     "32": "If you think that Henry’s second wife was the mother of Elizabeth"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jane_Seymour_-_Cast_Shadow_Workshop.jpg/440px-Jane_Seymour_-_Cast_Shadow_Workshop.jpg",
   book: books.first
 )
 
@@ -777,6 +777,7 @@ Page.create(
     "38": "If you think that Elizabeth was the sister of Mary",
     "80": "If you think that Elizabeth was the step-sister of Mary"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Elizabeth_I_in_coronation_robes.jpg/440px-Elizabeth_I_in_coronation_robes.jpg",
   book: books.first
 )
 
@@ -1353,7 +1354,7 @@ Page.create(
     "No, Gravesend is in England. If Medina Sidonia sailed into Gravesend it would be like sailing into a trap. The Spanish Armada would be trapped inside the harbour with the English ships blocking the entrance. The Spanish ships could be attacked from both land and sea. The Armada would be destroyed or captured."
   ],
   options: {
-    "119": "The Spanish Armada did not anchor at Gravesend"
+    "119": "Continue on to Gravelines"
   },
   book: books.first
 )
