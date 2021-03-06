@@ -6,7 +6,8 @@ import Page from '../components/Book/Page';
 const routes = {
   "/": () => <Library />,
   "/books/:id": ({ id }) => <Cover id={ id }/>,
-  "/books/:id/pages/:page": ({ page, id }) => <Page page={ page } book={ id }/>
+  "/books/:id/pages/:page": ({ page, id }) => <Page page={ page } book={ id }/>,
+  "/books/:id/pages/": () => <Library />
 };
 
 export default routes;
