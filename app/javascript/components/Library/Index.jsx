@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import Book from './Book'
 
+import { styles } from './styles';
+
 const Books = () => {
   const [books, setBooks] = useState([])
+  const shelfLength = books.length * 115 + 49
 
   useEffect(() => {
     axios.get("/api/books.json")
@@ -13,7 +16,7 @@ const Books = () => {
     .catch( error => console.log(error))
   },[])
 
-  const grid = books.map(item => {
+  const bookList = books.map(item => {
     return (
       <Book 
       key={item.id}
@@ -25,7 +28,12 @@ const Books = () => {
   return (
     <div>
       <h1 style={{ textAlign: 'center' }}>Adventure Books</h1>
-      { grid }
+      <div style={ styles.bookcase }>
+        <div style={ styles.bookend }/>
+          { bookList }
+        <div style={ styles.bookend }/>
+      </div>
+      <div style={ {...styles.shelf, width: shelfLength} }/>
     </div>
   )
 };

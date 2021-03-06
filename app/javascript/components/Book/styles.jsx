@@ -33,6 +33,7 @@ const link = {
   display: 'flex',
   alignItems:'center',
   justifyContent: 'center',
+  paddingBottom: 5
 }
 
 const coverPic = {
@@ -56,7 +57,8 @@ const image = {
   width: 300,
   marginLeft: 'auto', 
   marginRight: 'auto',
-  marginBottom: 20
+  marginBottom: 20,
+  border: '1px solid gray',
 }
 
 const bookmark = {
@@ -66,7 +68,7 @@ const bookmark = {
   display: 'block',
   marginLeft: 'auto', 
   marginRight: 'auto',
-  boxShadow: "2px 2px 5px 0px rgba(0,0,0,0.5)",
+  boxShadow: "2px 0px 5px 0px rgba(0,0,0,0.5)",
   borderRadius: "5px 5px 0 0",
   padding: 10
 }

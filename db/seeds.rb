@@ -48,6 +48,7 @@ Page.create(
   options: {
     "113": "Continue on"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Licht_der_Zeevaert%2C_Frontispiz.jpg/440px-Licht_der_Zeevaert%2C_Frontispiz.jpg",
   book: books.first
 )
 
@@ -61,6 +62,7 @@ Page.create(
   options: {
     "94": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/7/78/James_VI_of_Scotland_aged_20%2C_1586..jpg",
   book: books.first
 )
 
@@ -72,6 +74,7 @@ Page.create(
   options: {
     "63": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Acta_Eruditorum_-_II_orologi%2C_1737_%E2%80%93_BEIC_13458392.jpg/440px-Acta_Eruditorum_-_II_orologi%2C_1737_%E2%80%93_BEIC_13458392.jpg",
   book: books.first
 )
 
@@ -148,12 +151,13 @@ Page.create(
   page_number: 11, 
   content: [
     "When you go to Spain for a holiday you might find that the hotel has not been built yet or that your room has been double booked but this is not because there is a ten-day difference between England and Spain today.",
-    "In 1752 England changed from the Julian calendar and adopted the Julian calendar. It caused riots in England at the time because ten days do not exist.",
+    "In 1752 England changed from the Julian calendar and adopted the Gregorian calendar. It caused riots in England at the time because ten days do not exist.",
     "However, England and Spain now have the same calendar. It is the same day in Spain as it is in England."
   ],
   options: {
     "41": "Continue, whatever day it is"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julian_to_Gregorian_Date_Change.png/440px-Julian_to_Gregorian_Date_Change.png",
   book: books.first
 )
 
@@ -168,6 +172,7 @@ Page.create(
     "32": "If you think that Henry’s second wife was the mother of Elizabeth",
     "52": "If you think that Henry’s third wife was the mother of Elizabeth"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Catalina_de_Arag%C3%B3n%2C_por_un_artista_an%C3%B3nimo.jpg/440px-Catalina_de_Arag%C3%B3n%2C_por_un_artista_an%C3%B3nimo.jpg",
   book: books.first
 )
 
@@ -243,7 +248,7 @@ Page.create(
   page_number: 18, 
   content: [
     "The Armada would not have been ready in 1587. When Drake ‘singed the king of Spain’s beard’ he seriously delayed Philip’s arrangements. To build a new ship or to repair an old ship would take a long time for carpenters working by hand; July 1587 was too early.",
-    "Philip would need to leave in the summer. Travel by ship was not the safest means of travel at any time and in the winter with stormy weather and rough seas would have meant considerable danger. (see page 27 for the size of ship in the Armada.)",
+    "Philip would need to leave in the summer. Travel by ship was not the safest means of travel at any time and in the winter with stormy weather and rough seas would have meant considerable danger (see page 27 for the size of ship in the Armada).",
     "Philip would need to set sail in the summer when the seas can be expected to be calmer. Also, when Philip’s soldiers invaded England they would need to live off the land. If they arrived in winter there would be no food growing in the fields.",
     "The Spanish Armada set sail in July 1588."
   ],
@@ -287,6 +292,7 @@ Page.create(
   options: {
     "14": "Go back and rescue a few ships"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/SS_Austria_shipwreck.jpg/440px-SS_Austria_shipwreck.jpg",
   book: books.first
 )
 
@@ -299,6 +305,7 @@ Page.create(
   options: {
     "41": "Go back and deliver the message another way"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Alexander_Graham_Telephone_in_Newyork.jpg/440px-Alexander_Graham_Telephone_in_Newyork.jpg",
   book: books.first
 )
 
@@ -328,6 +335,7 @@ Page.create(
   options: {
     "94": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Francois_Second_Mary_Stuart.jpg/340px-Francois_Second_Mary_Stuart.jpg",
   book: books.first
 )
 
@@ -367,6 +375,7 @@ Page.create(
   options: {
     "90": "Set sail on a different date"
   },
+  image_url: "https://www.tate.org.uk/art/images/work/N/N00/N00476_10.jpg",
   book: books.first
 )
 
@@ -405,6 +414,7 @@ Page.create(
   options: {
     "104": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg/440px-%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg",
   book: books.first
 )
 
@@ -418,6 +428,7 @@ Page.create(
   options: {
     "41": "Continue, whatever day it is"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julian_to_Gregorian_Date_Change.png/440px-Julian_to_Gregorian_Date_Change.png",
   book: books.first
 )
 
@@ -431,6 +442,7 @@ Page.create(
   options: {
     "46": "Continue"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Anne_boleyn.jpg/440px-Anne_boleyn.jpg",
   book: books.first
 )
 
@@ -542,6 +554,7 @@ Page.create(
     "63": "Go back and try again",
     "17": "Use the time machine and go to the end of the story"
   },
+  image_url: "https://cdn.imgbin.com/19/5/8/imgbin-the-time-machine-time-travel-past-fiction-time-machine-3hzyGLnCczVEK44qUWBxbAHVV.jpg",
   book: books.first
 )
 
@@ -611,6 +624,7 @@ Page.create(
   options: {
     "109": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Francois_Second_Mary_Stuart.jpg/340px-Francois_Second_Mary_Stuart.jpg",
   book: books.first
 )
   
@@ -676,6 +690,7 @@ Page.create(
   options: {
     "104": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/1902_WrightBrosGlider.jpg/340px-1902_WrightBrosGlider.jpg",
   book: books.first
 )
 
@@ -687,6 +702,7 @@ Page.create(
   options: {
     "71": "Continue"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/The_Burning_of_the_Royal_James_at_the_Battle_of_Solebay%2C_28_May_1672_RMG_BHC0302.tiff/lossy-page1-440px-The_Burning_of_the_Royal_James_at_the_Battle_of_Solebay%2C_28_May_1672_RMG_BHC0302.tiff.jpg",
   book: books.first
 )
 
@@ -727,7 +743,7 @@ Page.create(
     "83": "If you think that the Armada was first seen on 1st August 1588",
     "103": "If you think that the Armada was first seen on 19th July 1589"
   },
-  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cornwall_UK_mainland_location_map.svg/480px-Cornwall_UK_mainland_location_map.svg.png",
+  image_url: "https://www.weather-forecast.com/locationmaps/The-Lizard.8.gif",
   book: books.first
 )
 
@@ -751,6 +767,7 @@ Page.create(
   options: {
     "39": "Return to Plymouth and choose another commander for the English navy"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Gheeraerts_Francis_Drake_1591.jpg/340px-Gheeraerts_Francis_Drake_1591.jpg",
   book: books.first
 )
 
@@ -861,6 +878,7 @@ Page.create(
   options: {
     "109": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg/440px-Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
   book: books.first
 )
 
@@ -933,6 +951,7 @@ Page.create(
   options: {
     "57": "Go back and select another harbour"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/%28Bah%C3%ADa_de_C%C3%A1diz%29_Seville%2C_Spain_%2849104522676%29_%28cropped%29.jpg/500px-%28Bah%C3%ADa_de_C%C3%A1diz%29_Seville%2C_Spain_%2849104522676%29_%28cropped%29.jpg",
   book: books.first
 )
 
@@ -1189,6 +1208,7 @@ Page.create(
   options: {
     "23": "Go back"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Circle_of_William_Scrots_Edward_VI_of_England.jpg/440px-Circle_of_William_Scrots_Edward_VI_of_England.jpg",
   book: books.first
 )
 
@@ -1217,6 +1237,7 @@ Page.create(
   options: {
     "10": "Go back and land somewhere else"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Port_Of_London_1837.jpg/500px-Port_Of_London_1837.jpg",
   book: books.first
 )
 
@@ -1254,7 +1275,7 @@ Page.create(
     "To release Mary would also be unwise because Mary would then be free to p-lot against Elizabeth.",
     "Elizabeth’s only choice was to keep Mary in prison and so Mary remained in Tutbury castle under house arrest. Although Mary was treated as well as could be expected she continued to organize Catholic plots to depose Elizabeth.",
     "Elizabeth pardoned Mary on several occasions but in 1587 Elizabeth’s patience was tried once too often. Anthony Babington was caught smuggling letters from Mary’s rooms. Robert Cecil, Elizabeth’s chief advisor, persuaded her that Mary could not be forgiven this time.",
-    "Mary was put on trial, found guilty and was sentenced to death. Mary still claimed to be the rightful queen of England and just before she was beheaded she left her claim to _______"
+    "Mary was put on trial, found guilty and was sentenced to death. Mary still claimed to be the rightful queen of England and just before she was beheaded she left her claim to who?"
   ],
   options: {
     "4": "If you think that Mary left her claim to her son James",
@@ -1288,6 +1309,7 @@ Page.create(
   options: {
     "39": "Go back and choose a commander who was alive in 1588"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/440px-Captainjamescookportrait.jpg",
   book: books.first
 )
 
@@ -1328,6 +1350,7 @@ Page.create(
   options: {
     "75": "Go back and prepare to set sail from somewhere else that has a port"
   },
+  image_url: "https://cdn.britannica.com/45/64545-050-87ABE8C5/Madrid-Spain.jpg",
   book: books.first
 )
 
@@ -1351,6 +1374,7 @@ Page.create(
   options: {
     "119": "Continue on to Gravelines"
   },
+  image_url: "https://images.mapsofworld.com/where-is/maps/gravesend-location-map.jpg",
   book: books.first
 )
 
@@ -1419,6 +1443,7 @@ Page.create(
   options: {
     "116": "Join forces with the Duke of Parma"
   },
+  image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Vaenius_-_Alexander_Farnese.png/440px-Vaenius_-_Alexander_Farnese.png",
   book: books.first
 )
 
@@ -1471,6 +1496,7 @@ Page.create(
   options: {
     "90": "Go to the correct port"
   },
+  image_url: "https://images.mapsofworld.com/where-is/maps/lisburn-location-map.jpg",
   book: books.first
 )
 
@@ -1501,6 +1527,7 @@ Page.create(
     "16": "If you think that the English set off in pursuit",
     "66": "If you think that the English march to London"
   },
+  image_url: "https://www.bowls.co.uk/wp-content/uploads/sir-frances-drake-bowls-armada.jpg",
   book: books.first
 )
 
@@ -1514,6 +1541,7 @@ Page.create(
   options: {
     "20": "Continue"
   },
+  image_url: "https://sites.google.com/site/spanisharmadahistory/_/rsrc/1366009184025/home/maps/Armada%20Map.png",
   book: books.first
 )
 
