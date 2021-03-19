@@ -8,6 +8,7 @@
 
 spanishArmada = Book.create({ title: "Elizabeth I & The Spanish Armada", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Invincible_Armada.jpg/1200px-Invincible_Armada.jpg" })
 henryVII = Book.create({ title: "Henry VIII", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg/340px-Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg" })
+richardIII = Book.create({ title: "Richard III" })
 
 Page.create(
   page_number: 1, 
