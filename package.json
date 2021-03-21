@@ -2,7 +2,8 @@
   "name": "adventure-book",
   "private": true,
   "scripts": {
-    "heroku-prebuild": "npm install --dev"
+    "heroku-prebuild": "npm install --dev",
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "@babel/preset-react": "^7.12.13",
