@@ -8,12 +8,11 @@ const book = {
   paddingLeft: 20,
   paddingRight: 20,
   minHeight: 475,
-  writingMode: 'vertical-rl',
+  writingMode: 'vertical-rl'
 }
 
 const link = {
-  textDecoration: 'none',
-
+  textDecoration: 'none'
 }
 
 const bookcase = {
@@ -35,7 +34,6 @@ const shelf = {
   height: 15,
   marginLeft: 'auto',
   marginRight: 'auto'
-
 }
 
 export const styles = {

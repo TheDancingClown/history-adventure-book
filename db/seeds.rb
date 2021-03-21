@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 spanishArmada = Book.create({ title: "Elizabeth I & The Spanish Armada", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Invincible_Armada.jpg/1200px-Invincible_Armada.jpg" })
-henryVII = Book.create({ title: "Henry VIII", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg/340px-Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg" })
-richardIII = Book.create({ title: "Richard III" })
+henryVIII = Book.create({ title: "Henry VIII", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg/340px-Enrique_VIII_de_Inglaterra%2C_por_Hans_Holbein_el_Joven.jpg" })
+battleOfHastings = Book.create({ title: "Battle Of Hastings", cover_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bayeux_Tapestry_scene57_Harold_death.jpg/300px-Bayeux_Tapestry_scene57_Harold_death.jpg" })
 
 Page.create(
   page_number: 1, 
@@ -20,9 +20,9 @@ Page.create(
     "The first official queen of England was Mary Tudor, the daughter of Henry VIII. Her reign last five years only from 1553-58.",
     "The second queen of England was Elizabeth I."], 
   options: {
-    "58": "If you think that Elizabeth became queen in 1558",
-    "85": "If you think that Elizabeth became queen in 1585",
-    "55": "If you think that Elizabeth became queen in 1855"
+    "58": "If you think that Elizabeth became queen in 1558 turn to page 58.",
+    "85": "If you think that Elizabeth became queen in 1585 turn to page 85.",
+    "55": "If you think that Elizabeth became queen in 1855 turn to page 55."
   },
   book: spanishArmada
 )
@@ -35,8 +35,8 @@ Page.create(
     "Elizabeth was accused of being illegitimate because one religious group objected to the marriage."
   ], 
   options: {
-    "23": "If you think the Catholics objected to the marriage",
-    "107": "If you think the Protestants objected to the marriage"
+    "23": "If you think the Catholics objected to the marriage turn to page 23.",
+    "107": "If you think the Protestants objected to the marriage turn to page 107."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Henry_VIII_and_Anne_Boleyn.png/440px-Henry_VIII_and_Anne_Boleyn.png",
   book: spanishArmada
@@ -48,7 +48,7 @@ Page.create(
     "No, the Spanish had not lost their directions. They had compasses so they knew in which direction they were sailing. If it was day-time they could see the sun and so know which direction they were going. Even at night they had charts of the stars and so they could tell in which direction they were going. So the Spanish knew that they were travelling in a North-East direction."
   ],
   options: {
-    "113": "Continue on"
+    "113": "Continue on to page 113."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Licht_der_Zeevaert%2C_Frontispiz.jpg/440px-Licht_der_Zeevaert%2C_Frontispiz.jpg",
   book: spanishArmada
@@ -62,7 +62,7 @@ Page.create(
     "Mary still wanted to depose Elizabeth and so she would need to leave her claim to the throne to a stronger candidate who would be able to take England by force."
   ],
   options: {
-    "94": "Go back"
+    "94": "Return to page 94."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/7/78/James_VI_of_Scotland_aged_20%2C_1586..jpg",
   book: spanishArmada
@@ -74,7 +74,7 @@ Page.create(
     "The watches of the English had not stopped because people did not wear watches yet."
   ],
   options: {
-    "63": "Go back"
+    "63": "Return to page 63."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Acta_Eruditorum_-_II_orologi%2C_1737_%E2%80%93_BEIC_13458392.jpg/440px-Acta_Eruditorum_-_II_orologi%2C_1737_%E2%80%93_BEIC_13458392.jpg",
   book: spanishArmada
@@ -88,7 +88,7 @@ Page.create(
     "Drake can not go back to his game of bowls; he needs to take some positive action to prevent the Spanish from invading."
   ],
   options: {
-    "112": "Go back"
+    "112": "Return to page 112."
   },
   book: spanishArmada
 )
@@ -100,7 +100,7 @@ Page.create(
     "Elizabeth was the last in the Tudor line of rulers."
   ],
   options: {
-    "109": "Go back and choose the next closest heir"
+    "109": "Return to page 109 and choose the next closest heir."
   },
   book: spanishArmada
 )
@@ -115,7 +115,7 @@ Page.create(
     "The Spanish lost some of their ships because of all three reasons."
   ],
   options: {
-    "118": "Continue"
+    "118": "Continue on page 118."
   },
   book: spanishArmada
 )
@@ -129,7 +129,7 @@ Page.create(
     "July 1587 was too early."
   ],
   options: {
-    "90": "Return to Lisbon and set sail on another date"
+    "90": "Return to Lisbon on page 90 and set sail on another date."
   },
   book: spanishArmada
 )
@@ -142,9 +142,9 @@ Page.create(
     "When the Spanish Armada set sail from Lisbon in July 1588 where were they heading for?"
   ],
   options: {
-    "81": "If you think Medina Sidonia was heading for Land’s End",
-    "91": "If you think Medina Sidonia was heading for London",
-    "98": "If you think Medina Sidonia was heading for Holland"
+    "81": "If you think Medina Sidonia was heading for Land’s End turn to page 81.",
+    "91": "If you think Medina Sidonia was heading for London turn to page 91.",
+    "98": "If you think Medina Sidonia was heading for Holland turn to page 98."
   },
   book: spanishArmada
 )
@@ -157,7 +157,7 @@ Page.create(
     "However, England and Spain now have the same calendar. It is the same day in Spain as it is in England."
   ],
   options: {
-    "41": "Continue, whatever day it is"
+    "41": "Continue, whatever day it is, on page 41."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julian_to_Gregorian_Date_Change.png/440px-Julian_to_Gregorian_Date_Change.png",
   book: spanishArmada
@@ -171,8 +171,8 @@ Page.create(
     "Henry could now marry his second wife, Anne Boleyn."
   ],
   options: {
-    "32": "If you think that Henry’s second wife was the mother of Elizabeth",
-    "52": "If you think that Henry’s third wife was the mother of Elizabeth"
+    "32": "If you think that Henry’s second wife was the mother of Elizabeth turn to page 32.",
+    "52": "If you think that Henry’s third wife was the mother of Elizabeth turn to page 52."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Catalina_de_Arag%C3%B3n%2C_por_un_artista_an%C3%B3nimo.jpg/440px-Catalina_de_Arag%C3%B3n%2C_por_un_artista_an%C3%B3nimo.jpg",
   book: spanishArmada
@@ -187,8 +187,8 @@ Page.create(
     "The Spanish now had another problem because the English were approaching the scene."
   ],
   options: {
-    "51": "If you think that the English began a full-scale battle",
-    "71": "If you think that the English sent in fire-ships"
+    "51": "If you think that the English began a full-scale battle turn to page 51.",
+    "71": "If you think that the English sent in fire-ships turn to page 71."
   },
   book: spanishArmada
 )
@@ -200,9 +200,9 @@ Page.create(
     "However, Medina Sidonia’s Armada now contained fewer ships than when he had left from Lisbon in July 1588."
   ],
   options: {
-    "21": "If you think that Medina Sidonia returned with 25 ships",
-    "62": "If you think that Medina Sidonia returned with 65 ships",
-    "100": "If you think that Medina Sidonia returned with 165 ships"
+    "21": "If you think that Medina Sidonia returned with 25 ships turn to page 21.",
+    "62": "If you think that Medina Sidonia returned with 65 ships turn to page 62.",
+    "100": "If you think that Medina Sidonia returned with 165 ships turn to page 100."
   },
   book: spanishArmada
 )  
@@ -215,7 +215,7 @@ Page.create(
     "Philip was not the commander of the Spanish Armada."
   ],
   options: {
-    "36": "Choose another commander"
+    "36": "Return to page 36 and choose another commander."
   },
   book: spanishArmada
 )
@@ -230,7 +230,7 @@ Page.create(
     "The best plan was for Drake to set off from Plymouth and hope that he could catch up with the Armada."
   ],
   options: {
-    "42": "Continue"
+    "42": "Continue on page 42."
   },
   book: spanishArmada
 )
@@ -241,7 +241,7 @@ Page.create(
     "As it said on page 40 this is the end of the story. However, it does not tell you what happens in the end. That would be cheating and you would not learn what happened to the Armada after it was sighted off the Lizard Point."
   ],
   options: {
-    "63": "Stop trying to cheat and go back"
+    "63": "Stop trying to cheat and return to page 63."
   },
   book: spanishArmada
 )
@@ -255,7 +255,7 @@ Page.create(
     "The Spanish Armada set sail in July 1588."
   ],
   options: {
-    "36": "Continue"
+    "36": "Continue on page 36."
   },
   book: spanishArmada
 )
@@ -267,7 +267,7 @@ Page.create(
     "Elizabeth could not have been the daughter of Mary Tudor."
   ],
   options: {
-    "58": "Choose another relation"
+    "58": "Return to page 58 and choose another relation."
   },
   book: spanishArmada
 )
@@ -279,9 +279,9 @@ Page.create(
     "However, this route was far more dangerous and the Spanish lost some of their ships."
   ],
   options: {
-    "8": "If you think that the Spanish lost some ships because of storms",
-    "28": "If you think that the Spanish lost some ships because of wreckers",
-    "78": "If you think that the Spanish lost some ships because they had no maps"
+    "8": "If you think that the Spanish lost some ships because of storms turn to page 8.",
+    "28": "If you think that the Spanish lost some ships because of wreckers turn to page 28.",
+    "78": "If you think that the Spanish lost some ships because they had no maps turn to page 78."
   },
   book: spanishArmada
 )
@@ -292,7 +292,7 @@ Page.create(
     "Medina Sidonia lost many ships because of the enemy cannons. He also lost more ships to the weather and the wreckers. However, the Spanish sailors did have some skill and Medina Sidonia was able to return to Spain with more than 25 ships."
   ],
   options: {
-    "14": "Go back and rescue a few ships"
+    "14": "Return to page 14 and rescue a few ships."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/SS_Austria_shipwreck.jpg/440px-SS_Austria_shipwreck.jpg",
   book: spanishArmada
@@ -305,7 +305,7 @@ Page.create(
     "The news was not told by telephone."
   ],
   options: {
-    "41": "Go back and deliver the message another way"
+    "41": "Return to page 41 and deliver the message another way."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Alexander_Graham_Telephone_in_Newyork.jpg/440px-Alexander_Graham_Telephone_in_Newyork.jpg",
   book: spanishArmada
@@ -320,9 +320,9 @@ Page.create(
     "Edward VI was not accused of being illegitimate – why?"
   ],
   options: {
-    "69": "If you think it was because Edward was male",
-    "89": "If you think it was because Edward was born first",
-    "109": "If you think it was because Edward was not illegitimate"
+    "69": "If you think it was because Edward was male turn to page 69.",
+    "89": "If you think it was because Edward was born first turn to page 89.",
+    "109": "If you think it was because Edward was not illegitimate turn to page 109."
   },
   book: spanishArmada
 )
@@ -335,7 +335,7 @@ Page.create(
     "Mary was beheaded in 1587 and so could not leave her claim to the English throne to the Dauphin because he had been dead for 26 years."
   ],
   options: {
-    "94": "Go back"
+    "94": "Return to page 94."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Francois_Second_Mary_Stuart.jpg/340px-Francois_Second_Mary_Stuart.jpg",
   book: spanishArmada
@@ -347,7 +347,7 @@ Page.create(
     "The wreckers would use the wood for their fires. They did not have gas or electricity in 1588 so they would have to use open fires for cooking, light and warmth. The main fuel for the fires would have been wood so any wreckage from the wooden ships would have been put to good use. However, the collection of wood was not the main aim of the wreckers."
   ],
   options: {
-    "118": "Go back"
+    "118": "Return to page 118."
   },
   book: spanishArmada
 )
@@ -361,10 +361,11 @@ Page.create(
     "Mary fled to England where she was captured and became Elizabeth’s prisoner."
   ],
   options: {
-    "115": "If you think that Elizabeth executed Mary shortly after capture",
-    "94": "If you think that Elizabeth executed Mary twenty years later",
-    "73": "If you think Elizabeth released Mary"
+    "115": "If you think that Elizabeth executed Mary shortly after capture turn to page 115",
+    "94": "If you think that Elizabeth executed Mary twenty years later turn to page 94.",
+    "73": "If you think Elizabeth released Mary turn to page 73."
   },
+  image_url: "/henryVIIdescendents.png",
   book: spanishArmada
 )
 
@@ -375,7 +376,7 @@ Page.create(
     "With relatively small ships and large waves sailing was not the safest means of travel at any time. To have set sail in December 1588 would probably have resulted in the sinking of several ships even before even sighting the enemy."
   ],
   options: {
-    "90": "Set sail on a different date"
+    "90": "Return to page 90 and set sail on a different date."
   },
   image_url: "https://www.tate.org.uk/art/images/work/N/N00/N00476_10.jpg",
   book: spanishArmada
@@ -390,7 +391,7 @@ Page.create(
     "The Spanish lost some ships because of all three reasons."
   ],
   options: {
-    "118": "Continue"
+    "118": "Continue on page 118."
   },
   book: spanishArmada
 )
@@ -403,7 +404,7 @@ Page.create(
     "But in which direction did the Armada scatter?"
   ],
   options: {
-    "71": "Go back"
+    "71": "Return to page 71."
   },
   book: spanishArmada
 )
@@ -414,7 +415,7 @@ Page.create(
     "It seems fairly sensible to presume that the commander of the Spanish Armada would be a sailor. Santa Cruz was certainly an experienced naval commander. However, Santa Cruz had died and so Philip needed to choose another commander. The most senior person was now Medina Sidonia but he was not a naval commander."
   ],
   options: {
-    "104": "Go back"
+    "104": "Return to page 104."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg/440px-%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg",
   book: spanishArmada
@@ -428,7 +429,7 @@ Page.create(
     "England and Spain now have the same calendar so it is the same day in England as it is in Spain."
   ],
   options: {
-    "41": "Continue, whatever day it is"
+    "41": "Continue, whatever day it is, on page 41."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julian_to_Gregorian_Date_Change.png/440px-Julian_to_Gregorian_Date_Change.png",
   book: spanishArmada
@@ -442,7 +443,7 @@ Page.create(
     "Yes, Elizabeth’s mother was Anne Boleyn."
   ],
   options: {
-    "46": "Continue"
+    "46": "Continue on page 46."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Anne_boleyn.jpg/440px-Anne_boleyn.jpg",
   book: spanishArmada
@@ -456,8 +457,8 @@ Page.create(
     "The Spanish now had another problem because the English were approaching the scene."
   ],
   options: {
-    "51": "If you think that the English began a full scale battle",
-    "71": "If you think that the English sent in fire-ships"
+    "51": "If you think that the English began a full scale battle turn to page 51.",
+    "71": "If you think that the English sent in fire-ships turn to page 71."
   },
   book: spanishArmada
 )
@@ -470,7 +471,7 @@ Page.create(
     "The Spanish Armada was not sighted by a dragon."
   ],
   options: {
-    "120": "Go back",
+    "120": "Return to page 120.",
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/St_George_and_the_Dragon_Verona_ms_1853_26r.jpg/580px-St_George_and_the_Dragon_Verona_ms_1853_26r.jpg",
   book: spanishArmada
@@ -484,7 +485,7 @@ Page.create(
     "The Spanish now had another problem because the English were approaching the scene."
   ],
   options: {
-    "116": "Go back and build some more ships"
+    "116": "Return to page 116 and build some more ships."
   },
   book: spanishArmada
 )
@@ -496,10 +497,10 @@ Page.create(
     "Who will command the Spanish Armada?"
   ],
   options: {
-    "15": "If you think that the commander of the Armada is Philip",
-    "60": "If you think that the commander of the Armada is Santa Cruz",
-    "72": "If you think that the commander of the Armada is Santa Claus",
-    "104": "If you think that the commander of the Armada is Medina Sidonia"
+    "15": "If you think that the commander of the Armada is Philip turn to page 15.",
+    "60": "If you think that the commander of the Armada is Santa Cruz turn to page 60.",
+    "72": "If you think that the commander of the Armada is Santa Claus turn to page 72.",
+    "104": "If you think that the commander of the Armada is Medina Sidonia turn to page 104."
   },
   book: spanishArmada
 )
@@ -511,7 +512,7 @@ Page.create(
     "The ships did not leave Cadiz because the harbour was too full."
   ],
   options: {
-    "61": "Return to Cadiz and choose again"
+    "61": "Return to Cadiz on page 61 and choose again."
   },
   book: spanishArmada
 )
@@ -524,7 +525,7 @@ Page.create(
     "Henry VIII also has another daughter. This daughter is Elizabeth but Elizabeth is not the sister of Mary."
   ],
   options: {
-    "80": "Hear why Mary and Elizabeth are not sisters"
+    "80": "To explain why Mary and Elizabeth are not sisters turn to page 80."
   },
   book: spanishArmada
 )
@@ -538,9 +539,9 @@ Page.create(
     "News, spread by beacons, that the Spanish Armada had been sighted reached Plymouth and so the order could be given for the English navy to be put to sea. But who was the commander of the English navy?"
   ],
   options: {
-    "56": "If you think that the English were commanded by Francis Drake",
-    "76": "If you think that the English were commanded by Lord Howard of Effingham",
-    "96": "If you think that the English were commanded by Captain Cook"
+    "56": "If you think that the English were commanded by Francis Drake turn to page 56.",
+    "76": "If you think that the English were commanded by Lord Howard of Effingham turn to page 76.",
+    "96": "If you think that the English were commanded by Captain Cook turn to page 96."
   },
   book: spanishArmada
 )
@@ -553,8 +554,8 @@ Page.create(
     "However, these are imaginary tales. The Spanish Armada did not have a time machine."
   ],
   options: {
-    "63": "Go back and try again",
-    "17": "Use the time machine and go to the end of the story"
+    "63": "Return to page 63 and try again.",
+    "17": "Turn to page 17. Page 17 is like a time machine because it will take you to the end of the story."
   },
   image_url: "https://cdn.imgbin.com/19/5/8/imgbin-the-time-machine-time-travel-past-fiction-time-machine-3hzyGLnCczVEK44qUWBxbAHVV.jpg",
   book: spanishArmada
@@ -569,9 +570,9 @@ Page.create(
     "The English fleet and Queen Elizabeth would need to know the news that the Armada had been sighted as soon as possible."
   ],
   options: {
-    "22": "If you think that the mews was told by telephone",
-    "82": "If you think that the news was told by a messenger",
-    "102": "If you think that the news was told by beacons"
+    "22": "If you think that the mews was told by telephone turn to page 22.",
+    "82": "If you think that the news was told by a messenger turn to page 82.",
+    "102": "If you think that the news was told by beacons turn to page 102."
   },
   book: spanishArmada
 )
@@ -584,8 +585,8 @@ Page.create(
     "The Spanish managed to sail on until night fell."
   ],
   options: {
-    "101": "If you think the Spanish anchored at Gravesend",
-    "119": "If you think the Spanish anchored at Gravelines"
+    "101": "If you think the Spanish anchored at Gravesend turn to page 101.",
+    "119": "If you think the Spanish anchored at Gravelines turn to page 119."
   },
   book: spanishArmada
 )
@@ -613,7 +614,7 @@ Page.create(
     "Mary still wants Elizabeth to be deposed."
   ],
   options: {
-    "94": "Go back and leave the claim to the throne to someone who could take the throne of England by force"
+    "94": "Return to page 94 and leave the claim to the throne to someone who could take the throne of England by force."
   },
   book: spanishArmada
 ) 
@@ -624,7 +625,7 @@ Page.create(
     "The Dauphin was the heir to the throne of France. He had married Mary, Queen of Scots, and so a Scottish/French alliance was a considerable danger to Elizabeth. Mary, Queen of Scots, was the closest relation to Elizabeth and so had a claim to the throne if Elizabeth was illegitimate. However, the Dauphin had no blood claim to the English throne. His claim was through his marriage to Mary and so this did not make him the closest relative to Elizabeth."
   ],
   options: {
-    "109": "Go back"
+    "109": "Return to page 109."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Francois_Second_Mary_Stuart.jpg/340px-Francois_Second_Mary_Stuart.jpg",
   book: spanishArmada
@@ -639,9 +640,9 @@ Page.create(
     "Illegitimate means being born when one’s parents are not, and have never been, married."
   ],
   options: {
-    "2": "If you think that Henry and Anne Boleyn were never married",
-    "23": "If you think that the Catholics did not recognise the marriage",
-    "107": "If you think that the Protestants did not recognise the marriage"
+    "2": "If you think that Henry and Anne Boleyn were never married turn to page 2.",
+    "23": "If you think that the Catholics did not recognise the marriage turn to page 23.",
+    "107": "If you think that the Protestants did not recognise the marriage turn to page 107."
   },
   book: spanishArmada
 )
@@ -653,7 +654,7 @@ Page.create(
     "There was a reason why Drake did not obey the command."
   ],
   options: {
-    "76": "Go back"
+    "76": "Return to page 76."
   },
   book: spanishArmada
 )
@@ -665,7 +666,7 @@ Page.create(
     "The ships that Medina Sidonia commanded may not have been full of men but they were full of provisions. They also contained one other very important item. That item was gold that was going to be used to pay the Duke of Parma’s soldiers."
   ],
   options: {
-    "120": "Continue"
+    "120": "Continue on page 120."
   },
   book: spanishArmada
 )
@@ -678,7 +679,7 @@ Page.create(
     "However, the Armada did not flee in a south-westerly direction towards Spain."
   ],
   options: {
-    "71": "Go back and choose another direction"
+    "71": "Return to page 71 and choose another direction."
   },
   book: spanishArmada
 )
@@ -690,7 +691,7 @@ Page.create(
     "Medina Sidonia was more than 300 years too early to be in the air force."
   ],
   options: {
-    "104": "Go back"
+    "104": "Return to page 104."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/1902_WrightBrosGlider.jpg/340px-1902_WrightBrosGlider.jpg",
   book: spanishArmada
@@ -702,7 +703,7 @@ Page.create(
     "No, the English did not start a full scale battle yet. If the Spanish were in range of the English cannons then the English ships were in range of the Spanish ships. First of all the English could cause panic amongst the Spanish and they did this by sending in fire-ships."
   ],
   options: {
-    "71": "Continue"
+    "71": "Continue on page 71."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/The_Burning_of_the_Royal_James_at_the_Battle_of_Solebay%2C_28_May_1672_RMG_BHC0302.tiff/lossy-page1-440px-The_Burning_of_the_Royal_James_at_the_Battle_of_Solebay%2C_28_May_1672_RMG_BHC0302.tiff.jpg",
   book: spanishArmada
@@ -715,8 +716,8 @@ Page.create(
     "Jane Seymore was not the mother of Elizabeth."
   ],
   options: {
-    "12": "If you think that Henry’s first wife was the mother of Elizabeth",
-    "32": "If you think that Henry’s second wife was the mother of Elizabeth"
+    "12": "If you think that Henry’s first wife was the mother of Elizabeth turn to page 12.",
+    "32": "If you think that Henry’s second wife was the mother of Elizabeth turn to page 32."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jane_Seymour_-_Cast_Shadow_Workshop.jpg/440px-Jane_Seymour_-_Cast_Shadow_Workshop.jpg",
   book: spanishArmada
@@ -729,7 +730,7 @@ Page.create(
     "Philip would not need so many ships for his soldiers."
   ],
   options: {
-    "116": "Go back"
+    "116": "Return to page 116."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Invincible_Armada.jpg/1200px-Invincible_Armada.jpg",
   book: spanishArmada
@@ -741,9 +742,9 @@ Page.create(
     "A lizard! Lizards do not live in the sea and they would not be able to communicate with humans. However, you have turned to the right page for the answer. The answer is that it is not a lizard but The Lizard. The Lizard is the name given to point of land. The Lizard Point is the most southerly part of England and is about 20 miles east of Land’s End. It was from the Lizard Point that the Armada was seen, not by a lizard but by guards watching from the Lizard."
   ],
   options: {
-    "63": "If you think that the Armada was first seen on 19th July 1588",
-    "83": "If you think that the Armada was first seen on 1st August 1588",
-    "103": "If you think that the Armada was first seen on 19th July 1589"
+    "63": "If you think that the Armada was first seen on 19th July 1588 turn to page 63.",
+    "83": "If you think that the Armada was first seen on 1st August 1588 turn to page 83.",
+    "103": "If you think that the Armada was first seen on 19th July 1589 turn to page 103."
   },
   image_url: "https://www.weather-forecast.com/locationmaps/The-Lizard.8.gif",
   book: spanishArmada
@@ -756,7 +757,7 @@ Page.create(
     "Elizabeth, like Mary, was a Tudor. The Tudor line of succession came in 1603 so 1855 is over 250 years too late for Elizabeth to become queen."
   ],
   options: {
-    "1": "Go back in time to crown Elizabeth as queen of England"
+    "1": "Go back in time and return to page 1 to crown Elizabeth as queen of England."
   },
   book: spanishArmada
 )
@@ -767,7 +768,7 @@ Page.create(
     "No, Sir Francis Drake was not in command of the English navy against the Spanish Armada. He is the one who’s name is well known because of all his daring deeds like ‘singeing the king of Spain’s beard’ at Cadiz in 1587. Later Drake sailed round the world in his boat called the Golden Hind. However, he was not the leader of the English navy."
   ],
   options: {
-    "39": "Return to Plymouth and choose another commander for the English navy"
+    "39": "Return to Plymouth on page 39 and choose another commander for the English navy."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Gheeraerts_Francis_Drake_1591.jpg/340px-Gheeraerts_Francis_Drake_1591.jpg",
   book: spanishArmada
@@ -781,9 +782,9 @@ Page.create(
     "Singeing the king of Spain’s beard delayed the Armada but it did not stop Philip. Philip continued to build more ships."
   ],
   options: {
-    "70": "If you think that Philip continued to use the port of Cadiz",
-    "90": "If you think that Philip moved his ships to Lisbon",
-    "110": "If you think that Philip moved his ships to Lisburne"
+    "70": "If you think that Philip continued to use the port of Cadiz turn to page 70.",
+    "90": "If you think that Philip moved his ships to Lisbon turn to page 90.",
+    "110": "If you think that Philip moved his ships to Lisburne turn to page 110."
   },
   book: spanishArmada
 )
@@ -795,9 +796,9 @@ Page.create(
     "The line of succession usually passes from the king to the eldest son. Elizabeth was obviously not the previous ruler’s eldest son."
   ],
   options: {
-    "19": "If you think that Elizabeth was the daughter of Mary",
-    "38": "If you think that Elizabeth was the sister of Mary",
-    "80": "If you think that Elizabeth was the step-sister of Mary"
+    "19": "If you think that Elizabeth was the daughter of Mary turn to page 19.",
+    "38": "If you think that Elizabeth was the sister of Mary turn to page 38.",
+    "80": "If you think that Elizabeth was the step-sister of Mary turn to page 80."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Elizabeth_I_in_coronation_robes.jpg/440px-Elizabeth_I_in_coronation_robes.jpg",
   book: spanishArmada
@@ -809,7 +810,7 @@ Page.create(
     "Portsmouth would be a good place in which to anchor the English navy. It was sheltered harbour and is situated on the south coast from where it could defend the English Channel. However, in 1588, the English navy was not at Portsmouth."
   ],
   options: {
-    "102": "Go back and keep the ships in another port"
+    "102": "Return to page 102 and keep the ships in another port."
   },
   book: spanishArmada
 )
@@ -821,7 +822,7 @@ Page.create(
     "However, Santa Cruz was not the commander when the Spanish Armada set sail in July 1588. The reason for this is that Santa Cruz had died on 9th February."
   ],
   options: {
-    "36": "Go back"
+    "36": "Return to page 36."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg/440px-%C3%81lvaroDeBaz%C3%A1nRafaelTegeo1828.jpg",
   book: spanishArmada
@@ -834,9 +835,9 @@ Page.create(
     "However, the Armada did not remain at Cadiz even before the fleet had been completed. Why did the Armada leave Cadiz?"
   ],
   options: {
-    "37": "If you think that the harbour was full and so they needed to move to a larger port",
-    "57": "If you think that the English sailed into Cadiz and destroyed some of the Spanish ships",
-    "77": "If you think that the Spanish were going to set off and then wait for the rest of the ships to be built"
+    "37": "If you think that the harbour was full and so they needed to move to a larger port turn to page 37.",
+    "57": "If you think that the English sailed into Cadiz and destroyed some of the Spanish ships turn to page 57.",
+    "77": "If you think that the Spanish were going to set off and then wait for the rest of the ships to be built turn to page 77."
   },
   book: spanishArmada
 )
@@ -849,8 +850,8 @@ Page.create(
     "What will happen to Medina Sidonia?"
   ],
   options: {
-    "93": "If you think that Medina Sidonia is executed",
-    "111": "If you think that Medina Sidonia is pardoned"
+    "93": "If you think that Medina Sidonia is executed turn to page 93.",
+    "111": "If you think that Medina Sidonia is pardoned turn to page 111."
   },
   book: spanishArmada
 )
@@ -863,10 +864,10 @@ Page.create(
     "But this is before the Spanish Armada had left Lisbon. How could this be so?"
   ],
   options: {
-    "5": "If you think that the watches of the English had stopped",
-    "40": "If you think that the Spanish had a time machine",
-    "95": "If you think that the Spanish had crossed the date line",
-    "114": "If you think that the Spanish  and the English had different calendars"
+    "5": "If you think that the watches of the English had stopped turn to page 5.",
+    "40": "If you think that the Spanish had a time machine turn to page 40.",
+    "95": "If you think that the Spanish had crossed the date line turn to page 95.",
+    "114": "If you think that the Spanish  and the English had different calendars turn to page 114."
   },
   book: spanishArmada
 )
@@ -878,7 +879,7 @@ Page.create(
     "Philip, therefore, was not the closest relation to the English throne even if he thought he was."
   ],
   options: {
-    "109": "Go back"
+    "109": "Return to page 109."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg/440px-Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
   book: spanishArmada
@@ -891,7 +892,7 @@ Page.create(
     "The ships were wrecked but not just to kill the Spaniards."
   ],
   options: {
-    "118": "Go back"
+    "118": "Return to page 118."
   },
   book: spanishArmada
 )
@@ -903,7 +904,7 @@ Page.create(
     "Drake did not march to London. He set off in pursuit of Medina Sidonia."
   ],
   options: {
-    "42": "Continue"
+    "42": "Continue on page 42."
   },
   book: spanishArmada
 )
@@ -915,7 +916,7 @@ Page.create(
     "Although Drake did not stop immediately it was not because his game was more important than defeating the Armada."
   ],
   options: {
-    "76": "Go back"
+    "76": "Return to page 76."
   },
   book: spanishArmada
 )
@@ -926,7 +927,7 @@ Page.create(
     "Philip and Medina Sidonia would have planned to raise an army of about 40,000 soldiers. A smaller army would easily be defeated. However, Medina Sidonia’s ships did not contain an army of 40,000 soldiers."
   ],
   options: {
-    "105": "Go back"
+    "105": "Return to page 105."
   },
   book: spanishArmada
 )
@@ -939,7 +940,7 @@ Page.create(
     "Therefore Edward was not illegitimate just because he was a boy."
   ],
   options: {
-    "23": "Go back"
+    "23": "Return to page 23."
   },
   book: spanishArmada
 )
@@ -951,7 +952,7 @@ Page.create(
     "Cadiz was not the best place for the Armada while the ships were being rebuilt."
   ],
   options: {
-    "57": "Go back and select another harbour"
+    "57": "Return to page 57 and select another harbour."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/%28Bah%C3%ADa_de_C%C3%A1diz%29_Seville%2C_Spain_%2849104522676%29_%28cropped%29.jpg/500px-%28Bah%C3%ADa_de_C%C3%A1diz%29_Seville%2C_Spain_%2849104522676%29_%28cropped%29.jpg",
   book: spanishArmada
@@ -967,9 +968,9 @@ Page.create(
     "What did the Spanish ships do when they saw the fire-ships approaching?"
   ],
   options: {
-    "29": "If you think that the Armada formed their battle line ready to attack the English",
-    "49": "If you think that the Armada fled south-westwards",
-    "92": "If you think that the Armada fled north-eastwards"
+    "29": "If you think that the Armada formed their battle line ready to attack the English turn to page 29.",
+    "49": "If you think that the Armada fled south-westwards turn to page 49.",
+    "92": "If you think that the Armada fled north-eastwards turn to page 92."
   },
   book: spanishArmada
 )
@@ -981,7 +982,7 @@ Page.create(
     "Father Christmas is in charge of a fleet of reindeer not a fleet of ships."
   ],
   options: {
-    "36": "Go back and hope that you still receive a Christmas present this year"
+    "36": "Return to page 36 and hope that you still receive a Christmas present this year."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/340px-Jonathan_G_Meath_portrays_Santa_Claus.jpg",
   book: spanishArmada
@@ -993,7 +994,7 @@ Page.create(
     "When Mary was deposed as the queen in Scotland and was captured by Elizabeth it was a stroke of fortune. Mary’s connection with France had ended when the Dauphin died in 1561. Nor could she now call on the full support of the Scots. Mary may have been weaker than she had been but she was still the closest Catholic relative to the throne of England and therefore could be a considerable threat to Elizabeth. It would not have been sensible for Elizabeth to release Mary to enable Mary to plot freely against Elizabeth."
   ],
   options: {
-    "26": "Go back"
+    "26": "Return to page 26."
   },
   book: spanishArmada
 )
@@ -1006,7 +1007,7 @@ Page.create(
     "The Spanish Armada was not sighted by a sea-horse."
   ],
   options: {
-    "120": "Go back"
+    "120": "Return to page 120."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hippocampus.jpg/440px-Hippocampus.jpg",
   book: spanishArmada
@@ -1022,9 +1023,9 @@ Page.create(
     "Philip needs to gather together his ships from all over Spain and needs to build more ships. While he is organizing his supplies the Armada begins to come together."
   ],
   options: {
-    "99": "If you think that Philip keeps the Armada at Madrid",
-    "117": "If you think that Philip keeps the Armada at Portsmouth",
-    "61": "If you think that Philip keeps his Armada at Cadiz"
+    "99": "If you think that Philip keeps the Armada at Madrid turn to page 99.",
+    "117": "If you think that Philip keeps the Armada at Portsmouth turn to page 117.",
+    "61": "If you think that Philip keeps his Armada at Cadiz turn to page 61."
   },
   book: spanishArmada
 )
@@ -1037,10 +1038,10 @@ Page.create(
     "However, Drake was playing bowls and did not set sail."
   ],
   options: {
-    "47": "If you think that Drake did not set sail because he did not like Lord Howard and wanted to be the leader himself and was, therefore, disobeying orders",
-    "67": "If you think that the bowls match was very important",
-    "87": "If you think that Drake was frightened of the Spanish",
-    "97": "If you think that Drake was unable to obey the order to set sail"
+    "47": "If you think that Drake did not set sail because he did not like Lord Howard and wanted to be the leader himself and was, therefore, disobeying orders turn to page 47.",
+    "67": "If you think that the bowls match was very important turn to page 67.",
+    "87": "If you think that Drake was frightened of the Spanish turn to page 87.",
+    "97": "If you think that Drake was unable to obey the order to set sail turn to page 97."
   },
   book: spanishArmada
 )
@@ -1053,7 +1054,7 @@ Page.create(
     "It would be totally impractical to wait at sea while the rest of the Armada was being completed."
   ],
   options: {
-    "61": "Go back"
+    "61": "Return to page 61."
   },
   book: spanishArmada
 )
@@ -1068,7 +1069,7 @@ Page.create(
     "The Spanish lost some ships because of all of these reasons."
   ],
   options: {
-    "118": "Continue"
+    "118": "Continue on page 118."
   },
   book: spanishArmada
 )
@@ -1080,7 +1081,7 @@ Page.create(
     "Therefore, the fleet in London would not be in the ideal place in which to defend against a Spanish attack."
   ],
   options: {
-    "102": "Go back and place the navy in a port on the south coast"
+    "102": "Return to page 102 and place the navy in a port on the south coast."
   },
   book: spanishArmada
 )
@@ -1093,9 +1094,9 @@ Page.create(
     "Henry VIII had six wives."
   ],
   options: {
-    "12": "If you think that Elizabeth’s mother was Catherine of Aragon",
-    "32": "If you think that Elizabeth’s mother was Anne Boleyn",
-    "52": "If you think that Elizabeth’s mother was Jane Seymore"
+    "12": "If you think that Elizabeth’s mother was Catherine of Aragon turn to page 12.",
+    "32": "If you think that Elizabeth’s mother was Anne Boleyn turn to page 32.",
+    "52": "If you think that Elizabeth’s mother was Jane Seymore turn to page 52."
   },
   book: spanishArmada
 )
@@ -1107,7 +1108,7 @@ Page.create(
     "Medina Sidonia was not planning to land at Land’s End."
   ],
   options: {
-    "10": "Go back and sail on"
+    "10": "Return to page 10 and sail on."
   },
   book: spanishArmada
 )
@@ -1120,7 +1121,7 @@ Page.create(
     "This was not the quickest way that the news was spread."
   ],
   options: {
-    "41": "Go back"
+    "41": "Return to page 41."
   },
   book: spanishArmada
 )
@@ -1132,7 +1133,7 @@ Page.create(
     "However, the Spanish Armada was not sighted on 1st August 1588."
   ],
   options: {
-    "54": "Go back"
+    "54": "Return to page 54."
   },
   book: spanishArmada
 )
@@ -1145,7 +1146,7 @@ Page.create(
     "Yes, Mary, Queen of Scots, believes that the greatest danger to Elizabeth would be from Spain and so Mary leaves her claim to the throne not to her son, James, but to Philip of Spain."
   ],
   options: {
-    "75": "Continue"
+    "75": "Continue on page 75."
   },
   book: spanishArmada
 )
@@ -1157,7 +1158,7 @@ Page.create(
     "Elizabeth was queen in 1585 but that is not the year that she became queen."
   ],
   options: {
-    "1": "Go back and crown Elizabeth in another year"
+    "1": "Return to page 1 and crown Elizabeth in another year."
   },
   book: spanishArmada
 )
@@ -1171,7 +1172,7 @@ Page.create(
     "The Spanish Armada, if you remember, was carrying a very important cargo. It was not soldiers or weapons, Medina Sidonia was going to collect soldiers and weapons from the Duke of Parma in the Spanish Netherlands. The ships were carrying something for the Duke of Parma’s soldiers. The soldiers wanted paying. Most of the ships in the Spanish Armada carried large amounts of gold."
   ],
   options: {
-    "14": "Continue"
+    "14": "Continue on page 14."
   },
   book: spanishArmada
 )
@@ -1184,7 +1185,7 @@ Page.create(
     "Drake was not frightened to set sail to attack the Armada."
   ],
   options: {
-    "76": "Go back"
+    "76": "Return to page 76."
   },
   book: spanishArmada
 )
@@ -1196,7 +1197,7 @@ Page.create(
     "Even if Philip had raised that number it would have meant almost a thousand soldiers on each ship of the Armada."
   ],
   options: {
-    "105": "Go back and set sail with fewer soldiers"
+    "105": "Return to page 105 and set sail with fewer soldiers."
   },
   book: spanishArmada
 )
@@ -1208,7 +1209,7 @@ Page.create(
     "Therefore, Edward was not born first and so this was not the reason that he was not illegitimate."
   ],
   options: {
-    "23": "Go back"
+    "23": "Return to page 23."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Circle_of_William_Scrots_Edward_VI_of_England.jpg/440px-Circle_of_William_Scrots_Edward_VI_of_England.jpg",
   book: spanishArmada
@@ -1223,9 +1224,9 @@ Page.create(
     "The Armada left Lisbon on 11th May and made their way to Corunna. It was from here that the Armada set off for the Spanish Netherlands."
   ],
   options: {
-    "9": "If you think that the Armada set out on 22nd July 1587",
-    "18": "If you think that the Armada set out on 22nd July 1588",
-    "27": "If you think that the Armada set out on 22nd December 1588"
+    "9": "If you think that the Armada set out on 22nd July 1587 turn to page 9.",
+    "18": "If you think that the Armada set out on 22nd July 1588 turn to page 18.",
+    "27": "If you think that the Armada set out on 22nd December 1588 turn to page 27."
   },
   book: spanishArmada
 )
@@ -1237,7 +1238,7 @@ Page.create(
     "Medina Sidonia was not planning to land in London."
   ],
   options: {
-    "10": "Go back and land somewhere else"
+    "10": "Return to page 10 and land somewhere else."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Port_Of_London_1837.jpg/500px-Port_Of_London_1837.jpg",
   book: spanishArmada
@@ -1252,8 +1253,8 @@ Page.create(
     "However, the Armada did not sail in a south-westerly direction but instead fled north-eastwards. Why?"
   ],
   options: {
-    "3": "If you think that the Spanish had lost their directions",
-    "113": "If you think that the English fleet was to the south-west"
+    "3": "If you think that the Spanish had lost their directions turn to page 3.",
+    "113": "If you think that the English fleet was to the south-west turn to page 113."
   },
   book: spanishArmada
 )
@@ -1265,7 +1266,7 @@ Page.create(
     "With such a disaster kings usually took out their anger on their commanders. It would be very easy to invent a charge of treason against Medina Sidonia and have him executed."
   ],
   options: {
-    "111": "Continue"
+    "111": "Continue on page 111."
   },
   book: spanishArmada
 )
@@ -1280,10 +1281,10 @@ Page.create(
     "Mary was put on trial, found guilty and was sentenced to death. Mary still claimed to be the rightful queen of England and just before she was beheaded she left her claim to who?"
   ],
   options: {
-    "4": "If you think that Mary left her claim to her son James",
-    "24": "If you think that Mary left her claim to the Dauphin",
-    "44": "If you think that Mary left her claim to Elizabeth",
-    "84": "If you think that Mary left her claim to Philip"
+    "4": "If you think that Mary left her claim to her son James turn to page 4.",
+    "24": "If you think that Mary left her claim to the Dauphin turn to page 24.",
+    "44": "If you think that Mary left her claim to Elizabeth turn to page 44.",
+    "84": "If you think that Mary left her claim to Philip turn to page 84."
   },
   book: spanishArmada
 )
@@ -1295,7 +1296,7 @@ Page.create(
     "Even if the Spanish Armada had crossed the date line this would mean that there would be a difference of only one day. This does not account for the difference in time."
   ],
   options: {
-    "63": "Go back"
+    "63": "Return to page 63."
   },
   book: spanishArmada
 )
@@ -1309,7 +1310,7 @@ Page.create(
     "Cook was not alive at the time of the Spanish Armada."
   ],
   options: {
-    "39": "Go back and choose a commander who was alive in 1588"
+    "39": "Return to page 39 and choose a commander who was alive in 1588."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/440px-Captainjamescookportrait.jpg",
   book: spanishArmada
@@ -1324,7 +1325,7 @@ Page.create(
     "He was not being arrogant or big-headed he just meant that they would have to wait until the tide had turned before they could set sail to attack the Spanish."
   ],
   options: {
-    "112": "Continue"
+    "112": "Continue on page 112."
   },
   book: spanishArmada
 )
@@ -1338,8 +1339,8 @@ Page.create(
     "Medina Sidonia was going to meet the commander of the troops in the Spanish Netherlands."
   ],
   options: {
-    "106": "If you think that the commander was the Duke of Palmer",
-    "116": "If you think that the commander was the Duke of Parma"
+    "106": "If you think that the commander was the Duke of Palmer turn to page 106.",
+    "116": "If you think that the commander was the Duke of Parma turn to page 116."
   },
   book: spanishArmada
 )
@@ -1350,7 +1351,7 @@ Page.create(
     "Madrid is the capital of Spain and so it could be where the king lived and would be a good place to gather his army. However, there is one problem and that is that Madrid is in the centre of Spain and so was a long way from the coast. It would be no good building an Armada in Madrid."
   ],
   options: {
-    "75": "Go back and prepare to set sail from somewhere else that has a port"
+    "75": "Return to page 75 and prepare to set sail from somewhere else that has a port."
   },
   image_url: "https://cdn.britannica.com/45/64545-050-87ABE8C5/Madrid-Spain.jpg",
   book: spanishArmada
@@ -1363,7 +1364,7 @@ Page.create(
     "However, Medina Sidonia did not return with 165 ships. He had set out from Lisbon with 132 ships and so he would have been very clever indeed if he had returned with more ships than he had set out with."
   ],
   options: {
-    "14": "Go back and lose a few ships"
+    "14": "Return to page 14 and lose a few ships."
   },
   book: spanishArmada
 )
@@ -1374,7 +1375,7 @@ Page.create(
     "No, Gravesend is in England. If Medina Sidonia sailed into Gravesend it would be like sailing into a trap. The Spanish Armada would be trapped inside the harbour with the English ships blocking the entrance. The Spanish ships could be attacked from both land and sea. The Armada would be destroyed or captured."
   ],
   options: {
-    "119": "Continue on to Gravelines"
+    "119": "The Spanish Armada did not anchor at Gravesend. Continue to Gravelines on page 119."
   },
   image_url: "https://images.mapsofworld.com/where-is/maps/gravesend-location-map.jpg",
   book: spanishArmada
@@ -1388,9 +1389,9 @@ Page.create(
     "The news would travel the 20-30 miles between bonfires at the speed of light and so it would not be long before the English navy knew that they would soon set sail to meet the enemy."
   ],
   options: {
-    "39": "If you think that the English navy was at Plymouth",
-    "59": "If you think that the English navy was at Portsmouth",
-    "79": "If you think that the English navy was at London"
+    "39": "If you think that the English navy was at Plymouth turn to page 39.",
+    "59": "If you think that the English navy was at Portsmouth turn to page 59.",
+    "79": "If you think that the English navy was at London turn to page 79."
   },
   book: spanishArmada
 )
@@ -1402,7 +1403,7 @@ Page.create(
     "The Armada was not sighted on 19th July 1589."
   ],
   options: {
-    "54": "Go back and try a speedier journey"
+    "54": "Return to page 54 and try a speedier journey."
   },
   book: spanishArmada
 )
@@ -1415,9 +1416,9 @@ Page.create(
     "Philip then chose Medina Sidonia to lead the Spanish Armada."
   ],
   options: {
-    "10": "If you think that Medina Sidonia was in the army",
-    "30": "If you think that Medina Sidonia was in the navy",
-    "50": "If you think that Medina Sidonia was in the air force"
+    "10": "If you think that Medina Sidonia was in the army turn to page 10.",
+    "30": "If you think that Medina Sidonia was in the navy turn to page 30.",
+    "50": "If you think that Medina Sidonia was in the air force turn to page 50."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Alonso_P%C3%A9rez_de_Guzm%C3%A1n.jpg/440px-Alonso_P%C3%A9rez_de_Guzm%C3%A1n.jpg",
   book: spanishArmada
@@ -1430,9 +1431,9 @@ Page.create(
     "With one hundred and thirty five ships how many soldiers do you think that Medina Sidonia carried."
   ],
   options: {
-    "48": "If you think that there were 20,000 soldiers",
-    "68": "If you think that there were 40,000 soldiers",
-    "88": "If you think that there were 100,000 soldiers"
+    "48": "If you think that there were 20,000 soldiers turn to page 48.",
+    "68": "If you think that there were 40,000 soldiers turn to page 68.",
+    "88": "If you think that there were 100,000 soldiers turn to page 88."
   },
   book: spanishArmada
 )
@@ -1443,7 +1444,7 @@ Page.create(
     "Palmer is the English spelling. There is no such person in English history as the Duke of Palmer. Even if there was an Englishman by that name he would not be in charge of the Spanish army and so Medina Sidonia would not be going to join with an Englishman."
   ],
   options: {
-    "116": "Join forces with the Duke of Parma"
+    "116": "Go to page 116 and join forces with the Duke of Parma."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Vaenius_-_Alexander_Farnese.png/440px-Vaenius_-_Alexander_Farnese.png",
   book: spanishArmada
@@ -1456,7 +1457,7 @@ Page.create(
     "It was not the Protestants who objected to the marriage between Henry and Anne Boleyn."
   ],
   options: {
-    "23": "Continue"
+    "23": "Continue on page 23."
   },
   book: spanishArmada
 )
@@ -1467,7 +1468,7 @@ Page.create(
     "Philip’s attempted invasion in 1588 may have lacked success but that was not the end of Philip’s plans. Philip did plan another invasion of England."
   ],
   options: {
-    "43": "Continue to find out how successful Philip’s next plan was"
+    "43": "To find out how successful Philip’s next plan was continue on page 43."
   },
   book: spanishArmada
 )
@@ -1481,10 +1482,10 @@ Page.create(
     "If Elizabeth was illegitimate she would not be allowed to be Queen of England. If Elizabeth could not be Queen then the throne would go to the nearest relation."
   ],
   options: {
-    "7": "If you think that the closest relation was Elizabeth’s younger sister",
-    "26": "If you think that Elizabeth’s closest relation was Mary, Queen of Scots",
-    "45": "If you think that Elizabeth’s closest relation was the French Dauphin",
-    "64": "If you think that Elizabeth’s closest relation was Philip of Spain"
+    "7": "If you think that the closest relation was Elizabeth’s younger sister turn to page 7.",
+    "26": "If you think that Elizabeth’s closest relation was Mary, Queen of Scots turn to page 26.",
+    "45": "If you think that Elizabeth’s closest relation was the French Dauphin turn to page 45.",
+    "64": "If you think that Elizabeth’s closest relation was Philip of Spain turn to page 64."
   },
   book: spanishArmada
 )
@@ -1496,7 +1497,7 @@ Page.create(
     "Lisburn is the right pronunciation but it is the wrong spelling."
   ],
   options: {
-    "90": "Go to the correct port"
+    "90": "Turn to page 90 for the correct port."
   },
   image_url: "https://images.mapsofworld.com/where-is/maps/lisburn-location-map.jpg",
   book: spanishArmada
@@ -1511,8 +1512,8 @@ Page.create(
     "The Armada had been defeated but Philip still had over 69 of his ships left."
   ],
   options: {
-    "43": "If you think that Philip built more ships with the intention of trying again",
-    "108": "If you think that Philip gave up his aim to conquer England"
+    "43": "If you think that Philip built more ships with the intention of trying again turn to page 43.",
+    "108": "If you think that Philip gave up his aim to conquer England turn to page 108."
   },
   book: spanishArmada
 )
@@ -1525,9 +1526,9 @@ Page.create(
     "Now that the Spanish had got ahead of the English what should the English do?"
   ],
   options: {
-    "6": "If you think that Drake went back to his game of bowls",
-    "16": "If you think that the English set off in pursuit",
-    "66": "If you think that the English march to London"
+    "6": "If you think that Drake went back to his game of bowls turn to page 6.",
+    "16": "If you think that the English set off in pursuit turn to page 16.",
+    "66": "If you think that the English march to London turn to page 66."
   },
   image_url: "https://www.bowls.co.uk/wp-content/uploads/sir-frances-drake-bowls-armada.jpg",
   book: spanishArmada
@@ -1541,7 +1542,7 @@ Page.create(
     "The Spanish had no real choice but to run before the wind to escape the English who were blocking the direct route back to Spain."
   ],
   options: {
-    "20": "Continue"
+    "20": "Continue on page 20."
   },
   image_url: "https://sites.google.com/site/spanisharmadahistory/_/rsrc/1366009184025/home/maps/Armada%20Map.png",
   book: spanishArmada
@@ -1555,8 +1556,8 @@ Page.create(
     "What happens if we go on holiday to Spain today?"
   ],
   options: {
-    "11": "If you think that it is the same day in England and Spain",
-    "31": "If you think that it is ten days different between England and Spain"
+    "11": "If you think that it is the same day in England and Spain turn to page 11.",
+    "31": "If you think that it is ten days different between England and Spain turn to page 31."
   },
   book: spanishArmada
 )
@@ -1569,7 +1570,7 @@ Page.create(
     "It would not be wise to execute Mary, Queen of Scots."
   ],
   options: {
-    "26": "Go back"
+    "26": "Return to page 26."
   },
   book: spanishArmada
 )
@@ -1582,9 +1583,9 @@ Page.create(
     "When Medina Sidonia left Lisbon in July 1588 to join up with the Duke of Parma how many ships were in the Spanish Armada?"
   ],
   options: {
-    "35": "If you think that there were 35 ships in the Armada",
-    "105": "If you think that there were 135 ships in the Armada",
-    "53": "If you think that there were 1035 ships in the Armada"
+    "35": "If you think that there were 35 ships in the Armada turn to page 35.",
+    "105": "If you think that there were 135 ships in the Armada turn to page 105.",
+    "53": "If you think that there were 1035 ships in the Armada turn to page 53."
   },
   book: spanishArmada
 )
@@ -1596,7 +1597,7 @@ Page.create(
     "However, Portsmouth would be no good for Philip because Portsmouth is in England. The ships would not have to sail far but they would be captured before they had left port."
   ],
   options: {
-    "75": "Go back and prepare to set sail from a Spanish port"
+    "75": "Return to page 75 and prepare to set sail from a Spanish port."
   },
   book: spanishArmada
 )
@@ -1608,9 +1609,9 @@ Page.create(
     "Why did the wreckers want the ships to hit the rocks?"
   ],
   options: {
-    "25": "If you think that they wanted the wood from the ships",
-    "65": "If you think that the wreckers wanted to kill the Spanish",
-    "86": "If you think that the wreckers wanted something else"
+    "25": "If you think that they wanted the wood from the ships turn to page 25.",
+    "65": "If you think that the wreckers wanted to kill the Spanish turn to page 65.",
+    "86": "If you think that the wreckers wanted something else turn to page 86."
   },
   book: spanishArmada
 )
@@ -1623,8 +1624,8 @@ Page.create(
     "Why was this?"
   ],
   options: {
-    "13": "If you think that Parma’s soldiers were somewhere else",
-    "33": "If you think that the Spanish did not have flat bottomed boats"
+    "13": "If you think that Parma’s soldiers were somewhere else turn to page 13.",
+    "33": "If you think that the Spanish did not have flat bottomed boats turn to page 33."
   },
   book: spanishArmada
 )
@@ -1636,9 +1637,9 @@ Page.create(
     "The English knew that the Spanish Armada was on its way and so they would be patrolling the coast looking for the first signs of the Spanish ships."
   ],
   options: {
-    "34": "If you think that the Armada was first spotted by a dragon",
-    "54": "If you think that the Armada was first spotted by a lizard",
-    "74": "If you think that the Armada was first spotted by a sea-horse"
+    "34": "If you think that the Armada was first spotted by a dragon turn to page 34.",
+    "54": "If you think that the Armada was first spotted by a lizard turn to page 54.",
+    "74": "If you think that the Armada was first spotted by a sea-horse turn to page 74."
   },
   book: spanishArmada
 )
@@ -1658,7 +1659,7 @@ Page.create(
     "22": "If you think Henry Tudor beat Richard II turn to page 22.",
     "33": "If you think Henry Tudor beat Richard III turn to page 33."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1672,7 +1673,7 @@ Page.create(
     "58": "If you think that this plan worked turn to page 58.",
     "85": "If you think that they still had to pay their taxes turn to page 85."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1687,7 +1688,7 @@ Page.create(
   options: {
     "107": "Continue on page 107."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1702,7 +1703,7 @@ Page.create(
   options: {
     "51": "Return to page 51 and choose another illness."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1716,7 +1717,7 @@ Page.create(
   options: {
     "68": "To find out why Henry’s joy was cut short continue on page 68."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1730,7 +1731,7 @@ Page.create(
   options: {
     "109": "Return to page 109 and try another alliance."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1743,7 +1744,7 @@ Page.create(
   options: {
     "28": "Return to page 28 and get rid of Anne Boleyn another way."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1759,7 +1760,7 @@ Page.create(
     "78": "If you think Henry married a Spanish princess turn to page 78.",
     "98": "If you think Henry married Catherine’s lady-in-waiting turn to page 98"
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1774,7 +1775,7 @@ Page.create(
     "29": "If you think Arthur dies turn to page 29.",
     "39": "f you think Catherine dies turn to page 39."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1790,7 +1791,7 @@ Page.create(
   options: {
     "109": "Continue on page 109."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1805,7 +1806,7 @@ Page.create(
   options: {
     "1": "Return to page 1 and fight another Richard."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1821,7 +1822,7 @@ Page.create(
   options: {
     "112": "To find out why Wolsey was not found guilty turn to page 112."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1841,7 +1842,7 @@ Page.create(
     "74": "If you think Catherine Parr was executed turn to page 74.",
     "88": "If you think Catherine Parr outlived Henry turn to page 88."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1861,7 +1862,7 @@ Page.create(
   options: {
     "117": "Continue on page 117."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1874,7 +1875,7 @@ Page.create(
   options: {
     "84": "Return to page 84 and get rid of Catherine by another way."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1886,7 +1887,7 @@ Page.create(
   options: {
     "61": "To discover why Holbein’s painting was not totally accurate turn to page 61."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1900,7 +1901,7 @@ Page.create(
   options: {
     "28": "Return to page 28 and get rid of Anne Boleyn another way."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1912,7 +1913,7 @@ Page.create(
   options: {
     "66": "Return to page 66 and try again."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1926,7 +1927,7 @@ Page.create(
     "29": "If you think Arthur dies turn to page 29.",
     "39": "If you think Catherine dies turn to page 39."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1943,7 +1944,7 @@ Page.create(
   options: {
     "71": "To discover her name turn to page 71."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1958,7 +1959,7 @@ Page.create(
     "69": "If you think Henry went ahead and married Anne of Cleves turn to page 69.",
     "96": "If you think Henry cancelled the marriage to Anne of Cleves turn to page 96."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1973,7 +1974,7 @@ Page.create(
   options: {
     "1": "Return to page 1 and fight another Richard."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1985,7 +1986,7 @@ Page.create(
   options: {
     "106": "Return to page 106."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -1999,7 +2000,7 @@ Page.create(
   options: {
     "68": "To discover why turn to page 68."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2012,7 +2013,7 @@ Page.create(
   options: {
     "65": "Return to page 65."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2024,7 +2025,7 @@ Page.create(
   options: {
     "66": "Return to page 66."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2037,7 +2038,7 @@ Page.create(
     "113": "If you think it is Edward who dies turn to page 113.",
     "72": "If you think it is Jane Seymour who dies turn to page 72."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2056,7 +2057,7 @@ Page.create(
     "57": "If you think Henry murders Anne Boleyn turn to page 57.",
     "77": "If you think Henry waits for Anne Boleyn to die turn to page 77."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2070,7 +2071,7 @@ Page.create(
     "62": "f you think this is the end of the peace treaty turn to page 62.",
     "36": "If you think the peace treaty continues turn to page 36."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2081,7 +2082,7 @@ Page.create(
   options: {
     "50": "To discover why the Pope refused to agree to Henry’s wishes continue on page 50."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2096,7 +2097,7 @@ Page.create(
     "83": "If you think Thomas Cromwell is executed turn to page 83.",
     "114": "If you think Thomas Cromwell dies on his way to trial for treason turn to page 114."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2109,7 +2110,7 @@ Page.create(
     "108": "If you think Henry married Anne of Cleves turn to page 108.",
     "118": "If you think Thomas Cromwell married Anne of Cleves turn to page 118."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2124,7 +2125,7 @@ Page.create(
   options: {
     "66": "Continue on page 66."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2137,7 +2138,7 @@ Page.create(
   options: {
     "106": "To find out whom, continue on page 106."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2153,7 +2154,7 @@ Page.create(
     "95": "If you think Henry divorces Catherine of Aragon turn to page 95",
     "115": "If you think Henry has his marriage to Catherine of Aragon annulled turn to page 115."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2172,7 +2173,7 @@ Page.create(
     "84": "If you think Henry and Catherine had a daughter turn to page 84.",
     "104": "If you think Henry and Catherine did not have children turn to page 104."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2189,7 +2190,7 @@ Page.create(
     "29": "If you think Arthur dies turn to page 29.",
     "139": "If you think Catherine dies turn to page 39."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2201,7 +2202,7 @@ Page.create(
   options: {
     "65": "Return to page 65."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2215,7 +2216,7 @@ Page.create(
   options: {
     "29": "To discover who is Catherine’s second husband, continue on page 29."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2226,7 +2227,7 @@ Page.create(
   options: {
     "20": "To discover why such an alliance would be an advantage turn to page 20."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2241,7 +2242,7 @@ Page.create(
   options: {
     "2": "To find out how Henry controlled his barons and filled his treasury turn to page 2."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2254,7 +2255,7 @@ Page.create(
     "92": "If you think Thomas Wolsey is executed turn to page 92.",
     "112": "If you think Thomas Wolsey dies of old age turn to page 112"
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2269,7 +2270,7 @@ Page.create(
   options: {
     "": "THE END"
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2286,7 +2287,7 @@ Page.create(
   options: {
     "117": "Continue on page 117."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2301,7 +2302,7 @@ Page.create(
     "67": "If you think Thomas More thought that Henry’s marriage to Catherine of Aragon should be annulled turn to page 67.",
     "76": "If you think Thomas More thought that the marriage between Henry and Catherine of Aragon was legal turn to page 76."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2315,7 +2316,7 @@ Page.create(
   options: {
     "93": "Continue on page 93."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2334,7 +2335,7 @@ Page.create(
   options: {
     "82": "To discover who is Henry’s third wife turn to page 82."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2350,7 +2351,7 @@ Page.create(
     "79": "If you think he made alliances with other countries turn to page 79.",
     "97": "If you think he ran away and was too cowardly to fight turn to page 97."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2362,7 +2363,7 @@ Page.create(
   options: {
     "82": "Return to page 82 and choose another wife."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2378,7 +2379,7 @@ Page.create(
   options: {
     "70": "Continue on page 70."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2395,7 +2396,7 @@ Page.create(
     "4": "If you think Henry illnesses were caused by smoking turn to page 4.",
     "86": "If you think Henry’s illnesses were caused by drinking turn to page 86."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2408,7 +2409,7 @@ Page.create(
   options: {
     "83": "Continue on page 83."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2424,7 +2425,7 @@ Page.create(
     "75": "If you think Henry’s main problem was the powerful families turn to page 75.",
     "41": "If you think Henry’s problem was all these reasons turn to page 41."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2436,7 +2437,7 @@ Page.create(
   options: {
     "84": "To discover the name of that daughter turn to page 84."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2448,7 +2449,7 @@ Page.create(
   options: {
     "106": "Return to page 106."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2461,7 +2462,7 @@ Page.create(
     "5": "If you think Jane Seymour had a son turn to page 5.",
     "24": "If you think Jane Seymour had a daughter turn to page 24."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2473,7 +2474,7 @@ Page.create(
   options: {
     "28": "Return to page 28 and choose a legal way to remove Anne Boleyn."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2486,7 +2487,7 @@ Page.create(
     "103": "If you think other barons avoided the tax by pretending to be poor turn to page 103.",
     "85": "If you think that the other barons still had to pay the tax turn to page 85."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2498,7 +2499,7 @@ Page.create(
     "74": "If you think Catherine Parr is executed turn to page 74.",
     "88": "If you think Catherine Parr outlives Henry turn to page 88."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2512,7 +2513,7 @@ Page.create(
   options: {
     "87": "Continue on page 87."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2531,7 +2532,7 @@ Page.create(
   options: {
     "32": "Continue on page 32."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2547,7 +2548,7 @@ Page.create(
   options: {
     "109": "Continue on page 109."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2559,7 +2560,7 @@ Page.create(
   options: {
     "36": "To discover if Catherine can marry her brother-in-law turn to page 36."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2571,7 +2572,7 @@ Page.create(
   options: {
     "109": "Return to page 109 and make an alliance."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2584,7 +2585,7 @@ Page.create(
     "120": "If you think Henry marries a foreign wife turn to page 120.",
     "13": "If you think Henry marries an English wife turn to page 13."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2598,7 +2599,7 @@ Page.create(
     "60": "If you think that Henry wanted to be able to say that Richard and his soldiers were traitors turn to page 60.",
     "26": "If you think that the batteries on Henry’s digital watch had stopped then turn to page 26."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2610,7 +2611,7 @@ Page.create(
   options: {
     "76": "Turn to page 76."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2624,7 +2625,7 @@ Page.create(
     "72": "If you think Jane Seymour dies turn to page 72.",
     "27": "If you think Henry dies turn to page 27."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2643,7 +2644,7 @@ Page.create(
     "83": "If you think Thomas Cromwell is executed turn to page 83.",
     "114": "If you think Thomas Cromwell died on his way to trial turn to page 114."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2659,7 +2660,7 @@ Page.create(
     "92": "If you think that Thomas Wolsey is executed turn to page 92.",
     "112": "If you think that Thomas Wolsey died of old age turn to page 112."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2673,7 +2674,7 @@ Page.create(
     "61": "If you think that Holbein’s painting of Anne was inaccurate turn to page 61."
   },
   image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Anne_of_Cleves%2C_by_Hans_Holbein_the_Younger.jpg/220px-Anne_of_Cleves%2C_by_Hans_Holbein_the_Younger.jpg",
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2688,7 +2689,7 @@ Page.create(
     "14": "If you think Edward was a strong, healthy baby turn to page 14.",
     "44": "If you think Edward was a weak, sickly baby turn to page 44."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2703,7 +2704,7 @@ Page.create(
   options: {
     "37": "Turn to page 37."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2719,7 +2720,7 @@ Page.create(
   options: {
     "51": "Continue on page 51."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2734,7 +2735,7 @@ Page.create(
     "53": "If you think Henry’s main problem was that the treasury was empty turn to page 53.",
     "41": "If you think Henry’s main problem was all these reasons turn to page 41."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2755,7 +2756,7 @@ Page.create(
     "101": "If you think Thomas More was hung, drawn and quartered turn to page 101.",
     "111": "If you think Thomas More was burnt at the stake turn to page 111."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2767,7 +2768,7 @@ Page.create(
   options: {
     "28": "Return to page 28 and end the marriage quickly."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2780,7 +2781,7 @@ Page.create(
     "8": "If you think Henry marries a French princess turn to page 8.",
     "98": "If you think Henry marries Catherine of Aragon’s lady-in-waiting turn to page 98."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2798,7 +2799,7 @@ Page.create(
     "37": "If you think Henry’s eldest son married someone from Spain turn to page 37.",
     "73": "If you think Henry’s eldest son married someone from England turn to page 73."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2811,7 +2812,7 @@ Page.create(
     "99": "If you think the marriage between Henry and Catherine Howard was annulled turn to page 99.",
     "116": "If you think Catherine Howard was executed turn to page 116."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2827,7 +2828,7 @@ Page.create(
     "100": "If you think Anne Boleyn had a daughter turn to page 100.",
     "110": "If you think Anne Boleyn’s child was stillborn turn to page 110."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2842,7 +2843,7 @@ Page.create(
     "89": "If you think Henry marries a French princess turn to page 89.",
     "119": "If you think Henry marries Anne Boleyn’s lady-in-waiting turn to page 119."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2857,7 +2858,7 @@ Page.create(
     "106": "If you think Henry marries an English person turn to page 106.",
     "34": "If you think Henry marries a foreign princess turn to page 34."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2875,7 +2876,7 @@ Page.create(
     "95": "If you think Henry divorces Catherine turn to page 95.",
     "115": "If you think Henry has his marriage to Catherine annulled turn to page 115."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2889,7 +2890,7 @@ Page.create(
   options: {
     "48": "To discover how else Henry filled his treasury turn to page 48."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2907,7 +2908,7 @@ Page.create(
     "105": "If you think Henry died in 1509 turn to page 105.",
     "43": "If you think Henry died in 1547 turn to page 43."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2923,7 +2924,7 @@ Page.create(
     "53": "If you think it is because the treasury is empty turn to page 53.",
     "41": "If you think it is all these reasons equally turn to page 41."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2938,7 +2939,7 @@ Page.create(
   options: {
     "51": "Continue on page 51."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2951,7 +2952,7 @@ Page.create(
   options: {
     "82": "Return to page 82 and choose another wife for Henry."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2965,7 +2966,7 @@ Page.create(
   options: {
     "28": "To find out why there was no joy in Henry’s heart continue on page 28."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2978,7 +2979,7 @@ Page.create(
     "101": "If you think Thomas More was hung, drawn and quartered turn to page 101.",
     "111": "If you think Thomas More was burnt turn to page 111."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -2995,7 +2996,7 @@ Page.create(
     "12": "If you think Thomas Wolsey was found innocent turn to page 12.",
     "112": "If you think something else happened to Thomas Wolsey turn to page 112."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3010,7 +3011,7 @@ Page.create(
     "20": "If you think it was an advantage to make an alliance with the Duke of Cleves turn to page 20.",
     "40": "If you think it was a disadvantage to make an alliance with the Duke of Cleves turn to page 40."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3026,7 +3027,7 @@ Page.create(
     "53": "If you think his trouble was that the treasury was empty turn to page 53.",
     "41": "If you think his trouble was all of these reasons turn to page 41."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3040,7 +3041,7 @@ Page.create(
     "35": "If you think that Henry waits for Catherine of Aragon to die turn to page 35.",
     "115": "If you think that Henry has his marriage annulled turn to page 115."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3051,7 +3052,7 @@ Page.create(
   options: {
     "69": "To discover why he married Anne of Cleves turn to page 69."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3064,7 +3065,7 @@ Page.create(
   options: {
     "79": "Return to page 79 to make an alliance."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3078,7 +3079,7 @@ Page.create(
   options: {
     "81": "To discover why it was necessary to marry Anne Boleyn as soon as possible turn to page 81."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3092,7 +3093,7 @@ Page.create(
   options: {
     "116": "Continue on page 116."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3106,7 +3107,7 @@ Page.create(
   options: {
     "28": "Continue on page 28."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3120,7 +3121,7 @@ Page.create(
     "111": "If you think Thomas More was burnt turn to page 111.",
     "91": "If you think Thomas More died of old age turn to page 91."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3134,7 +3135,7 @@ Page.create(
   options: {
     "51": "Return to page 51 and choose another illness."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3148,7 +3149,7 @@ Page.create(
   options: {
     "48": "To discover how else Henry filled his treasury turn to page 48."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3161,7 +3162,7 @@ Page.create(
     "54": "If you think that child was a son turn to page 54.",
     "84": "If you think that child was a daughter turn to page 84."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3173,7 +3174,7 @@ Page.create(
   options: {
     "86": "Return to page 86"
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3192,7 +3193,7 @@ Page.create(
     "99": "If you think the marriage between Henry and Catherine Howard was annulled turn to page 99.",
     "116": "If you think Catherine Howard was executed turn to page 116."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3206,7 +3207,7 @@ Page.create(
     "78": "If you think Henry marries a Spanish princess turn to page 78.",
     "98": "If you think Henry marries Catherine of Aragon’s lady-in-waiting turn to page 98."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3218,7 +3219,7 @@ Page.create(
   options: {
     "118": "To discover exactly what happened turn to page 118."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3234,7 +3235,7 @@ Page.create(
     "46": "If you think Henry makes a Protestant alliance turn to page 46",
     "64": "If you think Henry is unable to make any alliances turn to page 64."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3247,7 +3248,7 @@ Page.create(
     "90": "If you think the child was a boy turn to page 90.",
     "100": "If you think the child was a girl turn to page 100."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3260,7 +3261,7 @@ Page.create(
   options: {
     "3": "Continue on page 3."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3277,7 +3278,7 @@ Page.create(
   options: {
     "45": "Continue on page 45."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3290,7 +3291,7 @@ Page.create(
   options: {
     "68": "Return to page 68."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3301,7 +3302,7 @@ Page.create(
   options: {
     "69": "Return to page 69 and choose again."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3319,7 +3320,7 @@ Page.create(
     "30": "If you think Wolsey got the marriage annulled turn to page 30.",
     "50": "If you think Wolsey failed to get the marriage annulled turn to page 50."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3335,7 +3336,7 @@ Page.create(
   options: {
     "65": "Continue on page 65."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3350,7 +3351,7 @@ Page.create(
     "62": "If you think the Pope organises attacks on England turn to page 62.",
     "10": "If you think the Pope accepts Henry as head of the Church of England turn to page 10."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3365,7 +3366,7 @@ Page.create(
     "62": "If you think the Pope organises attacks on England turn to page 62.",
     "10": "If you think the Pope accepts Henry as head of the Church of England turn to page 10."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3382,7 +3383,7 @@ Page.create(
     "24": "If you think that Jane Seymour has a daughter turn to page 24.",
     "56": "If you think that Jane Seymour has no children turn to page 56."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3394,7 +3395,7 @@ Page.create(
   options: {
     "13": "To discover who that wife was turn to page 13."
   },
-  book: henryVII
+  book: henryVIII
 )
 
 Page.create(
@@ -3406,5 +3407,1445 @@ Page.create(
   options: {
     "86": "Return to page 86 and read carefully."
   },
-  book: henryVII
+  book: henryVIII
+)
+
+Page.create(
+  page_number: 1,
+  content: [
+    "King Canute, a Viking warrior who had made himself king of England, died in 1035. He was succeeded by his two sons Harald Harefoot and Hardicanute. Harefoot died in 1040 and in 1042 Hardicanute was driven from England. The Anglo-Saxons wanted no more Danish kings and so the Witan, a sort of early Parliament, decided to choose another king.",
+    "Ethelred the Unrede, the king of England before Canute, had two descendants; Edmund Ironside was the eldest son of Ethelred by his first marriage to Elfleda. However, Edmund had died while fighting against Canute. Edmund had a young son called Edward who was taken abroad when his father died. The other descendent was Edward the Confessor who was Ethelred’s younger son by his second marriage to Emma. Edward had been taken to Normandy as a young boy when Ethelred had been chased out of England.",
+    "Do you think the Witan chose Edward the Confessor or Edward Atheling?"
+  ],
+  options: {
+    "35": "If you think the Witan chose Edward the Confessor turn to page 35.",
+    "53": "If you think the Witan chose Edward the Atheling turn to page 53."
+  },
+  image_url: "/ethelredtree.png",
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 2,
+  content: [
+    "Harold Godwin has seized the throne and has been proclaimed king. Harold Godwin is happy but none of the other claimants are happy."
+  ],
+  options: {
+    "13": "If you think the others are unhappy but accept the Witan’s decision turn to page 13.",
+    "27": "If you think that the others join together to attack Harold turn to page 27.",
+    "39": "If you think they each make their own plans turn to page 39."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 3,
+  content: [
+    "The messenger that you send to Edgar the Atheling has a difficult journey. He has to cross the channel in a small wooden boat. He then has to continue either on foot or on horseback. (There are no forms of quick communication like today; no telephones, no radios, no satellites, no cars or trains or planes).",
+    "It is a long way to Hungary and there are many bandits and robbers because Robert Peel hadn’t invented policemen yet.",
+    "Somewhere along the journey your messenger disappears and the message is lost."
+  ],
+  options: {
+    "1": "Return to page 1 and start again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 4,
+  content: [
+    "Harold decides to let his army go home. His ships need to be repaired and refitted before the wood starts to rot. His soldiers need to go home to harvest their crops. If they do not return home soon their crops will begin to rot in the fields and then there will be no food to eat during the winter. If the soldiers were ordered to stay they would probably desert. The punishment for desertion would be death but if they stayed much longer they would starve to death in the winter anyway. They would stand a better chance of survival if they deserted and hoped that Harold did not catch them.",
+    "The summer is coming to an end and winter is approaching. The winter will bring storms and so William will find it difficult to cross the channel in their small wooden boats.",
+    "If William does land in England, his army will need to live off the land by eating the food that is growing in the fields. There will not be much food in the fields in the middle of winter.",
+    "On 8th September 1066 Harold dismisses his army."
+  ],
+  options: {
+    "52": "Continue on page 52."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 5,
+  content: [
+    "No, Edgar the Atheling would not have been a good choice as king. Kings needed in those days to run the country and to lead the army into battle. A nine year old boy would not have been capable of such acts. Edgar was Hungarian and would not have been able to communicate with his Anglo-Saxons.",
+    "There have been kings who have been children but they have had regents to help them rule the country. A regent would usually be a relative like the king’s uncle (the old king’s brother). Edgar had no such relatives.",
+    "Edgar may have been the rightful heir but he would have been a poor choice as king. 1066 was not the time for a child king."
+  ],
+  options: {
+    "44": "Return to page 44 and choose again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 6,
+  content: [
+    "For the battle to start at 5.00 a.m. is a little early. On 14th October 1066 dawn did not break until 5.30 a.m. so the battle would not begin before this as it would still be dark. The fighting would not usually begin at first light as the soldiers would need to be moved into position first."
+  ],
+  options: {
+    "96": "Return to page 96 and recheck the time."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 7,
+  content: [
+    "Yes, Harold would have been a good choice as king of England. He may not have had royal blood but he did have many advantages. As Edward’s leading earl Harold was ruling the country in all but name. Not only was he an experienced ruler but by chasing away his brother Tostig he had proved himself to be a lawful and honest ruler. Perhaps his biggest advantage was that he was English and living in England. This means that he would be the first to know of the deat of Edward.",
+    "However, the Witan did not elect Harold when Edward the Confessor died."
+  ],
+  options: {
+    "44": "Return to page 44 and choose again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 8,
+  content: [
+    "A motte and bailey was an early type of castle. It was a wooden tower (bailey) surrounded by a wooden fence on top of an earth mound (motte).",
+    "William would look for safe ground for his army and search parties would be sent out to look for food but it would be unlikely that William would have time to build a motte and bailey, especially one that would be able to hold about 8,000 men."
+  ],
+  options: {
+    "99": "To find out what happened first to William turn to page 99."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 9,
+  content: [
+    "Hardrada has won the battle of Fulford which means that one of the invasion forces has landed in England.",
+    "Why is Tostig, who is an Anglo-Saxon, helping a Viking to obtain the throne of England?"
+  ],
+  options: {
+    "36": "If you think Tostig wants Hardrada to be king of England turn to page 36.",
+    "63": "If you think Tostig is trying to take the throne for himself turn to page 63."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 10,
+  content: [
+    "Halley’s comet was not seen as a good omen for Harold. Halley’s comet, it is now known, orbits the earth every 76 years. It had not been seen before by people alive in 1066 and it appeared as a ball of flame with a fiery tail. It appeared to be heading towards England. This was interpreted that destruction was heading towards Harold. It was, therefore, a good omen for William. It was thought that it was a sign that William would defeat Harold."
+  ],
+  options: {
+    "62": "Continue on page 62."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 11,
+  content: [
+    "Quite right. Edgar would have been a poor choice as king of England. He was only nine years old and had spent all his life in Hungary. Kings, in those days, needed to run the country and lead the army. A nine year old boy would have been incapable of such feats.",
+    "Edgar was the rightful heir but he had no family to act as regent for him and 1066 was not the time for a boy king."
+  ],
+  options: {
+    "44": "Return to page 44 and choose again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 12,
+  content: [
+    "Harold should have waited. His army was not complete as some of his soldiers were still making their way to Hastings. Perhaps more importantly Harold did not need to challenge William. Harold had already taken the throne. He was king and would remain king if there was no battle. William had to beat Harold if he was to going to make himself king. A draw was not enough for the challenger – William.",
+    "Harold’s other great advantage was that he controlled the surrounding countryside. He would be able to feed his army from stores of food.",
+    "William, on the other hand, had no safe deposits of food and so his army would need to live off the land. As winter approached there would be less and less food in the fields. William would have had some supplies by boat from Normandy but it would need many crossings to supply his whole army. Also, as winter set in crossing the channel would become more hazardous.",
+    "If Harold could starve William’s army the Normans would be forced to return to the safety of their own land. William could try again the next year but the support of his followers would probably have dwindled.",
+    "Time was on Harold’s side but he thought that he was strong enough to beat William and so he gave battle."
+  ],
+  options: {
+    "96": "Continue on page 96."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 13,
+  content: [
+    "Edgar the Atheling is unhappy but is unable to do anything about the situation. He is only nine years old and is living in Hungary. Even if he knows that Harold has seized the throne Edgar is too young to fight for the throne.",
+    "William of Normandy, Harald Hardrada and Tostig are also unhappy but they are not going to sit back and accept the Witan’s choice of Harold Godwin. They all want the throne and are prepared to fight for it."
+  ],
+  options: {
+    "2": "Return to page 2."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 14,
+  content: [
+    "No, Hardrada would not have been a good choice as king of England. It is true that when Canute had been king there had been a time of peace and prosperity. However, Hardrada was not a peaceful king. Hardrada was known as ‘the last of the Vikings’. He was looking for a fight.",
+    "He would not have been very interested in doing his best for England had he become king."
+  ],
+  options: {
+    "44": "Return to page 44 and choose again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 15,
+  content: [
+    "Edwin and Morcar do not really have a good chance of defeating Hardrada. Hardrada had set sail from Norway with about 200 ships. He has gathered more troops from the Orkney Islands and has also been joined by Tostig’s forces. Hardrada now had about 300 ships which would give him an army of about 6,000 men.",
+    "Edwin and Morcar can not call on such a large number of soldiers. They do send some ships to delay Hardrada but the commander of those ships is not so foolish as to believe that he stop the Vikings. The defenders retreated before the Vikings hardly delaying them at all.",
+    "When the Vikings moved onto land they were met be Edwin and Morcar. Edwin and Morcar were not going to give their lives in a hopeless cause and at the first sign that Hardrada was winning Edwin and Morcar left the battlefield.",
+    "On 20thSeptember 1066 Harold Hardrada won the battle of Fulford."
+  ],
+  options: {
+    "9": "Continue on page 9."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 16,
+  content: [
+    "William had won the battle of Hastings. Now he needed to march to London to claim the throne and make himself king of England.",
+    "William did not rush to London and seize the crown. Instead, he went slowly by a roundabout route."
+  ],
+  options: {
+    "83": "If you think William was allowing his soldiers time to recover their strength turn to page 83.",
+    "103": "If you think William was mopping up any Saxon resistance turn to page 103.",
+    "110": "If you think William was waiting for the Witan to elect him as king turn to page 110."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 17,
+  content: [
+    "To remain unmarried would probably be Edward’s wish. As we know he would rather have been a monk than a monarch and he would have preferred to spend his time in church. Also, he was now 37 years old in an age when people married young and life expectancy of the ordinary person was not greatly more than 40. The richer people with easier access to food, clothing, shelter and better hygiene could expect to live more years though.",
+    "Whatever his wish the king’s duty was to marry and produce an heir. Most marriages, in those days, were arranged marriages where two people married, not for love, but to cement a treaty between two countries or two families.",
+    "Edward has to marry."
+  ],
+  options: {
+    "23": "Turn back to page 23 and choose again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 18,
+  content: [
+    "Harold knows that William is preparing to invade England. He also knows that Harald Hardrada is likely to invade. Tostig, too, will be looking for an opportunity to take te throne.",
+    "Harold Godwin has a problem in that England is about to be attacked. A greater problem is that Harold is about to be attacked by two people. Added to that the two invaders will land at opposite ends of the country. William will cross the channel and land on the south coast. Hardrada, on the other hand, will come from across the North Sea and so will land on the north east coast of England. A further problem for Harold is that he does not know who will land first."
+  ],
+  options: {
+    "97": "If you think Harold waits in the middle of England to see who arrives first turn to page 97.",
+    "88": "If you think Harold places half his army in the north east and the other half on the south coast turn to page 88.",
+    "72": "If you think Harold places his whole army in the north east turn to page 72.",
+    "61": "If you think Harold places his whole army on the south coast turn to page 61."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 19,
+  content: [
+    "It would not be in Harold’s interests to support William as the next king after Edward the Confessor. Harold is the most important and powerful lord in the land and while Edward the Confessor and Harold’s sister, Edith, remain childless there is the distinct possibility that te Witan will invite Harold to take the throne on the death of Edward the Confessor. This is the possibility to which Harold has been working towards. An oath to support William would ruin Harold’s chance of becoming king.",
+    "However, if Harold does not swear an oath he will probably remain as William’s ‘guest’ for a long time. Certainly this would be until Edward’s death and that William had gained the throne. Harold’s stay might be shorter if he met with some mysterious accident.",
+    "Harold had no choice but to swear the oath giving his allegiance to William. Harold would then be released and could return home. From the safety of England Harold could then plead that the oath had been made under duress and should, therefore, be cancelled.",
+    "Having sworn the oath the tablecloth is removed to reveal that it is not a table but a large chest. Inside the chest were holy relics. Holy relics were the bones of saints and pieces of the cross on which Jesus was crucified. Harold had been tricked into putting his hand on the chest while swearing the oath. Thus, the promise had been made to God. Breaking your promise to God was considered to be the worst crime possible.",
+    "Harold is released and returns to England."
+  ],
+  options: {
+    "33": "Continue on page 33."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 20,
+  content: [
+    "An army of 800 is far too small. William would not stand much chance if he tried to invade with an army of less than a thousand. If any of his boats ran into trouble while crossing the Channel then William’s army would be considerably depleted. An army of 800 trying to invade another country would probably be defeated as soon as they stepped ashore.",
+    "William was more experienced than to think he could succeed with such a small army."
+  ],
+  options: {
+    "30": "Return to page 30 to raise a few more soldiers."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 21,
+  content: [
+    "Yes, Harold marches quickly to Hastings where William is preparing to meet his enemy. Harold marches to London and then to Hastings where he places his army on a ridge. He should then have waited for reinforcements. Harold had hurried south with his housecarls, who were his best soldiers. The rest of his army had followed behind at a slower pace. An army should march as fast as its slowest man, but Harold’s forces were now strung out. Many of the soldiers who had fought at Stamford Bridge were too injured to march south. Many of the northerners had drifted off the back of the march south and had returned to their homes. They felt that they had done their part and it was now up to the southerners to fight William.", 
+    "Harold had recruited new soldiers on his way south and had gathered more men from his own lands but the size of his army was not as large as that which had fought at Stamford Bridge.",
+    "Harold now had to decide whether to wait or whether to attack."
+  ],
+  options: {
+    "12": "If you think Harold decided to wait near Hastings turn to page 12.",
+    "66": "If you think Harold decided to attack immediately turn to page 66."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 22,
+  content: [
+    "The waves break over your ship. It is filling up with water. The water is increasing the weight of your ship which makes your ship float lower in the water. Your ship is sinking lower. You’ve sunk. You abandon ship and start to swim towards the shore. You can’t swim very well. Even if you are an expert swimmer it is no good in the rough seas. The weight of your clothes is dragging you down.",
+    "If Harold had drowned there could have been no Battle of Hastings on 14th October 1066.",
+    "The end.",
+    "Why not try again."
+  ],
+  options: {
+    "1": "Return to page 1."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 23,
+  content: [
+    "Edward the Confessor has now become king of England. Edward, however, would rather have been a monk than a monarch. He built Westminster Abbey and spent much of his time in prayer. During Canute’s reign the country had been divided into four earldoms. Edward now divided the country into five earldoms. The three main earldoms were Northumbria, ruled by Siward. Mercia, ruled by Leofric and Wessex, ruled by Godwin. The other two earldoms, Kent and East Anglia were ruled by Godwin’s sons. Godwin, therefore, was the most powerful and influential earl. Although Godwin was low-born with no royal blood, there were rumours that he wished the crown for himself.",
+    "While the Danes had ruled England Edward had lived in Normandy from an early age. When he returned to England he brought with him Norman customs, Norman friends and advisers and the Norman language.",
+    "In 1042 Edward the Confessor is 37 years old and unmarried. The king needs a wife and heir."
+  ],
+  options: {
+    "17": "If you think Edward remains unmarried turn to page 17.",
+    "71": "If you think Edward marries a Norman princess turn to page 71.",
+    "77": "If you think Edward marries the daughter of Earl Godwin turn to page 77."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 24,
+  content: [
+    "Harold has placed his army on the south coast and his navy patrols the Channel. He now waits and waits. Eventually his navy needs to return to port. The ships were wooden and some of the wood needs to be replaced. Also, the ships need more pitch and tar between the joints to make them watertight.",
+    "Harold’s army is beginning to grow uneasy. The majority of the soldiers are not professional. Harold can not afford to pay for a standing army. His army is made up of ordinary people who come together in the time of danger. Normally the majority of the people would survive by growing their own crops on a small plot of land.",
+    "Harold’s army has been waiting for an invasion through most of the summer. Their crops are now ready to be harvested. The soldiers want to go home to harvest their crops."
+  ],
+  options: {
+    "4": "If you think that Harold lets his army go home turn to page 4.",
+    "60": "If you think Harold commands his army to stay turn to page 60."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 25,
+  content: [
+    "Harold did not have royal blood but the line of succession did not strictly have to follow the nearest blood relative.",
+    "Harold would be a good choice as king. He was English. He was living in England and had already proved himself to be a good ruler by chasing away Tostig."
+  ],
+  options: {
+    "44": "Return to page 44."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 26,
+  content: [
+    "Eight hundred soldiers would not win many battles for William and eighty thousand would have been too many for William to be able to transport over the Channel. Even if William did manage to raise 80,000 soldiers there would have been too many soldiers for William to command efficiently. Without modern day communications William would have found it very difficult to issue orders in any battle.",
+    "There was one other difficulty in raising such a large number. The total population of Normandy would have been less than one million, which included women, children and men too old to fight.",
+    "The exact number of soldiers that William did raise is not known but from details such as the number of ships and the amount of food collected it is estimated that William’s army numbered about eight thousand.",
+    "William needed time to gather food and provisions for his army. He also needed to transport them across the Channel. William did not have a fleet of ships. There would have been no need as most of his dealings would have been with his neighbouring lands and that required no travel by boat.",
+    "William commandeered some ships and built others."
+  ],
+  options: {
+    "48": "If you think William’s fleet numbered 70 boats turn to page 48.",
+    "85": "If you think William’s fleet numbered 170 boats turn to page 85.",
+    "57": "If you think William’s fleet numbered 700 boats turn to page 57."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 27,
+  content: [
+    "Edgar the Atheling can not join wit anybody as he is too young and too far away and too weak to fight.",
+    "Neither will the others join forces. The prize for which they would be fighting is the throne of England and there can only be one king. Therefore, there is no point in Hardrada and William joining forces to defeat Harold because afterwards Hardrada would have to fight William for the throne. There is no need to fight two battles. If either manages to beat Harold Godwin then the victor will claim the crown of England.",
+    "Both Hardrada and William are strong enough to challenge Harold. Tostig, on the other hand, is the weakest and could do with some help but then, he too, will have to turn against whoever helped him if he wishes to be king."
+  ],
+  options: {
+    "2": "Return to page 2."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 28,
+  content: [
+    "The Saxons dropped their shields, left their defensive position on top of Senlac Hill and chased after the Bretons. The reason why they did this was for personal gain. The Saxons were not professional soldiers and were not paid by Harold. They were volunteers, some rather more reluctant, but nevertheless, volunteers. All the time they were fighting they could not be growing their food. In the summer of 1066 the Saxons had spent a long time waiting for William and Hardrada. Their harvest was probably rather poor. Now, if they won the battle of Hastings, was their chance to repair their losses and, perhaps, make a profitable gain.",
+    "The profit would come from the spoils of war. Some of the dead soldiers might carry valuable such as a ring. There would also be armour, weapons and horses which could perhaps be sold later on. The biggest profit would come if you could ransom a prisoner. No ransom could be obtained from capturing an ordinary soldier but a fortune could be made by capturing someone like William. However, there was only one William in the battle so whoever got to him first would win the prize.",
+    "When it looked as if William’s army was retreating the race was on for the richest prizes."
+  ],
+  options: {
+    "105": "Continue on page 105."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 29,
+  content: [
+    "In such a serious dispute it would be expected that blood would be thicker tan water and that Harold would support his brother. However, the size of the rebel force was considerable and the result of any civil war could easily go against the House of Godwin. Also, Tostig seems to have become a favourite of Edward and perhaps there was a danger that Tostig could be appointed as Edward’s successor. By siding with the rebels Harold was removing one obstacle that lay between him and the throne."
+  ],
+  options: {
+    "46": "Turn back to page 46."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 30,
+  content: [
+    "William may have had the support of the Pope but what he needed to be able to fight Harold was an army and for that army to fight Harold he would need to get them across the Channel.",
+    "William had his own small army but he needed support from not only the rest of his barons in Normandy but also aid from his neighbouring lands such as Brittany and Flanders. To encourage his barons to support his invasion they were promised areas of land in England that would be confiscated from the defeated Anglo-Saxons who had fought against William. The more soldiers that the barons provided then the more land they would receive as reward.",
+    "How many soldiers could William expect to raise for his army?"
+  ],
+  options: {
+    "20": "If you think William raised 800 soldiers turn to page 20.",
+    "26": "If you think William raised 8,000 soldiers turn to page 26.",
+    "43": "If you think William raised 80,000 soldiers turn to page 43."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 31,
+  content: [
+    "For the first time in a battle in England William used tactics that were to be repeated in most future battles right up to the time of atomic and nuclear weapons. The weapons may have changed through time but the basic tactic remained the same.",
+    "William’s plan was to use his archers first. This is called the artillery. Their task was to fire waves of arrows at the Saxons sheltering behind their shield-wall. The shield-wall would take the brunt of the attack but soe of the arrows were bound to find their intended target.",
+    "This part of the battle did not last very long because Harold did not employ archers in his army and so there would be no arrows being fired back at the Normans. Once the Normans had used their quiver of arrows they would not be able to collect the arrows fired by the enemy to fire back.",
+    "The Norman archers would then retire and the men-at-arms, who were the infantry, would advance. The infantry now entered the battle once the enemy, hopefully, had been softened up.",
+    "The infantry would fight in hand to hand combat trying to make a breach in the battle line of the enemy. If a weak spot appeared then the cavalry would break through the line and then wheel and attack the enemy from the rear."
+  ],
+  options: {
+    "104": "To continue the battle turn to page 104."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 32,
+  content: [
+    "William sent a messenger to the Pope to explain how Harold had promised to support William as the king of England. What was significant was that the oath had been sworn on holy relics such as the bones of saints. Harold had broken his word, not only to William, but to God.",
+    "Williams messenger does not explain that the oath was sworn under duress. Neither does he mention that the incident of the oath might not have taken place at all (see page 33).",
+    "The Pope is given a one-sided version of the story and so willingly offers his support to William."
+  ],
+  options: {
+    "30": "Turn to page 30."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 33,
+  content: [
+    "There is no mention by any English chroniclers of Harold making a visit to Normandy either intentionally, or accidentally. Such a visit by the most powerful man in England would, surely, have deserved some mention somewhere. The only primary source evidence of Harold crossing the Channel comes in 1066 when Harold’s signature appears on a document as a witness that confirmed ownership of the Abbey of St Peter’s at Ghent of their house at Harnes which was being threatened by Count Eustace of Boulogne. It is interesting that another signature of that event was Guy of Ponthieu who supposedly captured Harold when he was shipwrecked.",
+    "The Bayeux tapestry, commissioned by bishop Odo after the Battle of Hastings, shows Harold swearing the oath on holy relics in support of William in 1065. Could it be that the tapestry was used as propaganda and the dates of Harold’s visit was conveniently changed? Certainly a large part of William’s argument was that Harold had broken his holy oath. This would enable William to get the Pope on his side. William certainly made use of this in 1066.",
+    "The shipwreck and the oath swearing may have been imaginary but there was nothing imaginary in a problem that arose within England."
+  ],
+  options: {
+    "46": "Continue on page 46."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 34,
+  content: [
+    "Staying in York is not the best plan. It is a good idea for Harold to remain near York for a while to allow his soldiers to recover from the ordeals of the Battle of Stamford Bridge. However, York is not the best place from where to reorganise his army. York is in the earldom of Northumbria and it is ruled by Morcar. Maybe the land and its people are not actually hostile to Harold but neither will they be over-enthusiastic to volunteer their services to Harold.",
+    "The other disadvantage with gathering his army at York is that they will have a long march of 250 miles to the south to meet William.",
+    "Harold dismisses this idea."
+  ],
+  options: {
+    "68": "Return to page 68 and choose another plan."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 35,
+  content: [
+    "Edward the Confessor is the better choice. He may not be the direct heir as he is descended through the second son of Ethelred. However, he seems to have the better qualifications. Edward Atheling is living in Hungary and is too difficult to reach whereas Edward the Confessor would be aware of events taking place in England. He was an adult and therefore, might be considered more experienced to rule. Also, his mother was Emma who had married Canute when Ethelred died and so Edward the Confessor was the stepbrother of the previous king, Hardicanute, and stepson of Canute. There was no blood relationship but Edward the Confessor would be more acceptable to the Danes.",
+    "In 1042 the Anglo-Saxon line is restored to the throne of England and Edward the Confessor becomes king."
+  ],
+  options: {
+    "23": "Turn to page 23."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 36,
+  content: [
+    "If Tostig supports Hardrada then he will want and will expect some reward. Tostig does not particularly want Hardrada because he thinks that the Viking will be the best for England. Tostig is supporting Hardrada in return for some reward.",
+    "The least that Tostig will hope for will be the return of his earldom of Northumbria.",
+    "However, Tostig has ambitions for more than just Northumbria."
+  ],
+  options: {
+    "63": "Turn to page 63."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 37,
+  content: [
+    "Harold would, naturally, wish to try to reach harbour and safety. This was easier to say than to do. There was no steam power in those days and so boat travel was determined by the wind and sail power. To try to sail the ship against the wind by tacking would have put a considerable strain on the rudder. The ship would be broadside to the waves for much of the time. The size of a typical ship would perhaps be between 15 – 20 metres long and 5 metres wide with open decks and small sides. Sailing against the wind would almost certainly risk sinking."
+  ],
+  options: {
+    "73": "If you change your mind and decide to drift turn to page 73.",
+    "22": "If you still decide to fight the storm turn to page 22."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 38,
+  content: [
+    "William did not allow Harold’s body to be taken away by Edith Swan-Neck. William did not want Harold’s grave to become a memorial. William feared that Harold’s grave might become a rallying point for Saxon unrest against the Normans.",
+    "Also, William still regarded Harold as an oath breaker for failing to support William’s claim to the throne. Such an oath breaker, in William’s eyes, did not merit a ceremonial burial. Harold’s body was destined for an unmarked grave."
+  ],
+  options: {
+    "16": "Continue on page 16."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 39,
+  content: [
+    "William of Normandy and Harold Hardrada are very annoyed that Harold Godwin has seized the throne.",
+    "William believes that he had been nominated by Edward the Confessor as his successor. He also believes that Harold has sworn an oath to serve William. For many years William has believed that he would be the next king of England.",
+    "Harald Hardrada thought that he should be the next king because he was related to Canute.",
+    "Neither William nor Hardrada wish to join forces because the prize, for which they are both hoping, is the throne of England and only one of them can wear the crown. If they did join forces to defeat Harold Godwin they would then have to fight each other. To win the crown therefore would require two victories. By challenging Harold on their own they could win the crown with one victory.",
+    "Both William and Hardrada make their plans to invade England and win the throne by force."
+  ],
+  options: {
+    "87": "Turn to page 87."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 40,
+  content: [
+    "Hardrada was caught totally by surprise by the speed with which Harold had marched north. To average about 50 miles a day was an excellent feat by the Saxons. Hardrada had left his fleet and some of his soldiers at Riccall while he had moved inland to accept the surrender of the surrounding countryside. Hardrada was not expecting to see Harold.",
+    "Tostig advised that the Vikings should immediately retreat and try to get back to their ships and the rest of their soldiers at Riccall. Hardrada knew that Harold would be able to attack his rear as he retreated. He also suspected that Harold would have sent some troops to cut off his retreat. However, the word retreat was not part of Hardrada’s vocabulary and so he lined up his troops to fight Harold and the Saxons.",
+    "The battle was fought by hacking and slashing at each other with swords, axea and spears. Many soldiers died on both sides and it was reported that the Viking survivors filled 24 sghips only from the original total of about 300. Hardrada was not one of the survivors and neither was Tostig. It was said that Tostig’d body was barely recogisable from so many injuries and also because his body had been trampled on when he had fallen during the battle.",
+    "Harold Godwin was the victor of the Battle of Stamford Bridge."
+  ],
+  options: {
+    "41": "Continue on page 41."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 41,
+  content: [
+    "Harold Godwin had eliminated one contender for his crown in a hard won battle. Harold now rewarded his troops with a feast but at the feast celebrating his victory at Stamford Bridge Harold heard the news that he feared the worst.",
+    "Harold learned that on 28th September, three days after the Battle of Stamford Bridge William had landed at Pevensey Bay near Hastings on the south coast.",
+    "Harold seems plagued by bad luck. He had prepared to receive William’s invasion but was then forced to allow his army to return home. He was then faced by Hardrada’s invasion which he skilfully defeated. His reward was to hear that William had eventually, and surprisingly late, had invaded.",
+    "When William landed at Pevensey Bay what did he do first?"
+  ],
+  options: {
+    "8": "If you think William built a motte and bailey turn to page 8.",
+    "99": "If you think William tripped over on the beach turn to page 99."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 42,
+  content: [
+    "Yes, you are correct. Hardrada would have been a poor choice as king of England. He did have royal blood but it was Danish royal blood. This would not make him popular with the Anglo-Saxons of England. He was an adult and an experienced ruler but he spent most of his time in warlike pursuits."
+  ],
+  options: {
+    "44": "Return to page 44 and choose again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 43,
+  content: [
+    "An army of 80,000 is not considered to be very large by today’s standards. More people watch the cup final at Wembley each year. However, there are important differences between 1066 and today. It must be remembered that the population was much smaller than today. The population of England was about one and a half million. That of Normandy would have been much less. To raise an army of 80,000 would have been impossible from the population of Normandy.",
+    "Even if William had managed to have raised such a number he would not have been able to feed such an army. He would also have the problem of transporting such a large army across the Channel. Boats would not have carried more than about 30 soldiers. William would also find it very difficult to organise and communicate his orders. There were no radios with which to communicate."
+  ],
+  options: {
+    "30": "Return to page 30."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 44,
+  content: [
+    "Edward the Confessor was now in his 60’s. He saw the new year in but little more for on 5th January 1066 Edward the Confessor died. Edward had not produced a son and so there was no direct heir. There were four possibilities for the Witan to consider."
+  ],
+  options: {
+    "54": "If you think the Witan chose Edgar the Atheling turn to page 54.",
+    "64": "If you think the Witan chose Harold Godwin turn to page 64.",
+    "74": "If you think the Witan chose Harald Hardrada turn to page 74.",
+    "84": "If you think the Witan chose Willian of Normandy turn to page 84.",
+    "94": "If you think the Witan chose nobody turn to page 94."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 45,
+  content: [
+    "Hardrada had set out with about 200 ships. He has collected more soldiers and more ships in the Orkney Islands. He has also been joined by Tostig. Hardrada has about 300 ships which would give him an army of about 6,000 warriors.",
+    "Edwin and Morcar do not have as large an army. They do send some ships to delay Hardrada but the captain realises that he cannot defeat the superior skilled sailors of the Vikings and so he retreats before the invaders hardly delaying them at all.",
+    "When Hardrada moves onto land he is met by Edwin and Morcar. Edwin and Morcar are not going to give their lives in a hopeless cause and at the first sign of defeat Edwin and Morcar leave the battlefield.",
+    "On 20th September 1066 Hardrada and Tostig win the Battle of Fulford."
+  ],
+  options: {
+    "9": "Continue on page 9."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 46,
+  content: [
+    "At the beginning of 1065 Harold’s brother, Tostig, had succeeded Siward in becoming earl of Northumbria. Tostig was a man of cruelty and within a year the Northumbrians had had enough of Tostig’s tyranny. The Northumbrians rebelled against Tostig an demanded that the king should appoint Morcar who was the younger brother of Edwin, the earl of Mercia. Edward was rather annoyed for it was the king who appointed earls but the appointment of a new earl was being forced on him. The rebels could draw on support from Mercia and Northumbria and so posed a considerable threat. Edward called upon Harold for support and advice."
+  ],
+  options: {
+    "29": "If Harold joins Tostig to fight the rebels turn to page 29.",
+    "89": "If Harold joins the rebels and fights against his brother turn to page 89."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 47,
+  content: [
+    "Harold may have wished to remain unmarried. He did have a mistress called Edgyva Swanneshals or Edith Swanneck as she is better known. It was not unusual for a king to have a mistress. Kings usually had arranged marriages and a king would often marry someone he had never seen. Marriages were arranged for alliances between countries and families. Love was often found outside marriage.",
+    "Edith Swanneck, however, brought no alliance with her. Harold needed to marry a wife who would be able to support his cause militarily."
+  ],
+  options: {
+    "87": "Return to page 87."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 48,
+  content: [
+    "The size of a typical boat in 1066 would have been about 25 metres long and about 5 metres at its widest and the depth from the gunwale to the keel was about 2 metres. With only 70 boats it would need over one hundred soldiers in each boat.",
+    "If you had a hundred men in your boat your boat would be likely to sink. Your soldiers will drown or have to swim back to shore."
+  ],
+  options: {
+    "26": "Return to page 26 and build some more boats."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 49,
+  content: [
+    "Dawn broke at 5.30 a.m. on the morning of 14th October 1066. The battle could not begin before first light but neither could the fighting begin at dawn. William would need to move his troops to the bottom of the ridge at Senlac Hill. Harold did not want to start the battle as he had a good defensive position at the top of the ridge and would make William attack uphill.",
+    "The first troop movements would have started soon after dan on 14th October 1066. This would have been the Normans moving from their camp to the bottom of the ridge. Some of the Normans would need a couple of hours before they were in position.",
+    "The Battle of Hastings did not begin before 9.00 a.m. on 14th October 1066."
+  ],
+  options: {
+    "90": "To begin the battle turn to page 90."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 50,
+  content: [
+    "William had many advantages on his side. He was an adult and already an experienced ruler. He was the Duke of Normandy. He was the cousin of Edward the Confessor and therefore he was the nearest blood relation who would be capable of ruling the country. Edward had spent much of his early life in Normandy and had introduce Norman customs in England when he became king and so William would not find it totally different in England.",
+    "William claimed the Edward had promised him the throne. However, it must be remembered that Edward was not legally entitled to do this.",
+    "Despite the fact that William was not English he would have been a good choice as king. However, the Witan did not elect William of Normandy as king of England."
+  ],
+  options: {
+    "44": "Return to page 44."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 51,
+  content: [
+    "The idea of Harold running away is unthinkable. Harold has just defeated one challenge to his throne from Hardrada. He feels confident and will not run away from the other challenge to his throne from William.",
+    "England is Harold’s land and he will not run away. If he did he would be laughed out of any country that he went to."
+  ],
+  options: {
+    "68": "Gather your courage and return to page 68 and choose a plan to defeat William."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 52,
+  content: [
+    "Harold’s brother Tostig had been chased away from Northumbria and had gone to Flanders. Tostig set out from Flanders in May 1066 and tried to attack England and win support. His raids along the coast are not very successful and he is driven away bt Edwin and Morcar. Tostig now joins forces with Hardrada.",
+    "Harold Godwin has been waiting on the south coast but on 8th September 1066 he dismisses his army believing that William will not invade England this year.",
+    "However, as soon as Harold had dismissed his army he received news that Hardrada and Tostig had invaded the north of England. Hardrada sailed up the river Humber and to two miles south of York.. Hardrada met Edwin and Morcar at the Battle of Fulford on 20th September 1066."
+  ],
+  options: {
+    "15": "If you think Edwin and Morcar win the Battle of Fulford turn to page 15.",
+    "45": "If you think Hardrada and Tostig win the Battle of Fulford turn to page 45."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 53,
+  content: [
+    "To choose Ethelred’s grandson would seem, at first sight, to be the sensible decision. Edward was descended through the elder son of Ethelred and therefore had a better claim to the throne. However, Edward was living in Hungary and was unknown to the people in England. The next king, in those days, was elected by the Witan, he did not have to be te son of the previous king."
+  ],
+  options: {
+    "35": "If you decide it might be better to elect Edward the Confessor turn to page 35.",
+    "3": "If you decide that the crown should still go to Edward Atheling turn to page 3."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 54,
+  content: [
+    "Edgar the Atheling was the son of Edward Atheling who had mysteriously died in 1057. He was the grandson of Edmund Ironside who was Edward the Confessor’s step brother.",
+    "Edgar was, therefore, the closest blood relative to Edward the Confessor. However, Edgar had a few disadvantages. He was only 9 years old and had lived all his life in Hungary."
+  ],
+  options: {
+    "5": "If you think Edgar would be a good choice as king turn to page 5.",
+    "11": "If you think Edgar would have been a poor choice as king turn to page 11."
+  },
+  image_url: "/edgarathelingtree.png",
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 55,
+  content: [
+    "In 1053 Earl Godwin died and Wessex passed to his second son Harold. Godwin’s eldest son, Sweyn, had disappeared while on a crusade. Harold was now king in all but name.",
+    "In 1057 Edward Atheling returned from Hungary. This was the son of Edmund Ironside and therefore the nephew of Edward the Confessor. He was also of royal blood and would be knig if Edward the Confessor remained childless. No sooner had Edward Atheling arrived in England than he died in suspicious circumstances. The exact details are not recorded but the finger of suspicion pointed towards Harold. It cannot be denied that Harold had the most to gain by the removal of Edward Atheling. However, in Harold’s defence it should be stated that he served Edward the Confessor loyally and efficiently during the last ten years of Edward’s reign.",
+    "In 1065 Harold sett out by boat from Bosham, near Chichester. Where he was going was uncertain but it was not unusual to travel by boat along the coast as roads were basically just dirt tracks that were rutted and dusty in summer and wet and muddy in winter.",
+    "While in the boat a storm blew up."
+  ],
+  options: {
+    "37": "If you think Harold tried to get to harbour turn to page 37.",
+    "73": "If you think Harold allowed the boat to drift turn to page 73.",
+    "30": "If you think that Harold was not caught in a storm at all turn to page 30."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 56,
+  content: [
+    "Halley’s comet, it is now known, appears every seventy-six years but nobody in 1066 had witnessed before this flaming ball with a fiery tail. It appeared that the flame was heading towards England and so it was interpreted that fire and flame would spread through England.",
+    "This was seen as a good omen for William. It was seen as a sign that William would defeat Harold."
+  ],
+  options: {
+    "62": "Continue on page 62."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 57,
+  content: [
+    "William’s army would require a fleet of about 700 ships. A typical ship in 1066 would have been about 25 metres long and 5 metres at its widest point. The distance from the keel to the gunwale was just over 2 metres. The ships could carry no more than about 30 soldiers. Not only did the ships have to carry the men but they would also have to carry weapons and other provisions which would reduce the number of soldiers on each ship.",
+    "William also had a large number of cavalry and it was not possible to carry many horses on a ship. Therefore, it was necessary for William to have about 7oo boats for his army of 8,000 soldiers and horses.",
+    "While William is preparing in Normandy, Harold is preparing in England."
+  ],
+  options: {
+    "18": "Continue on page 18."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 58,
+  content: [
+    "Battles did not usually start in the afternoon. It was not possible to fight in the dark in those days. Soldiers did not have night-sights or radar. The battle had to be decided during the day. The winning side would be the one which drove the enemy from the battlefield. Unless the sides were very uneven it would take many hours for one side to push the enemy off the field.",
+    "The battle would begin as soon as possible."
+  ],
+  options: {
+    "96": "Return to page 96."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 59,
+  content: [
+    "The Witan has very little choice. Harold has seized the throne and it would be very difficult to remove him other than by force. The Witan confirm Harold as the king of England.",
+    "It may well have been that the Witan would have elected Harold had they had a free choice. Of the contenders to succeed Edward the Confessor Edgar was too young and the only person who supported Harald Hardrada was Harald Hardrada. This left a two horse race between Harold Godwin and William of Normandy. Their qualifications were fairly equal. Harold decided not to wait for the Witan to decide but made up their minds for them by seizing the throne. From a position of power Harold could then suggest that the Witan elect him.",
+    "Harold was able to seize the throne because he was living in England and, therefore, would be the first to know of the death of Edward the Confessor. Harold was at Edward’s deathbed when Edward reversed his earlier decision to nominate William as his successor and instead Edward nominated Harold.",
+    "Harold had already seized the throne and been elected by the Witan before the other contenders even knew that Edward the Confessor had died."
+  ],
+  options: {
+    "2": "Continue on page 2."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 60,
+  content: [
+    "If Harold ordered his army to remain on patrol he would have a difficulties forcing them to stay and he would lose much of his support from the ordinary soldiers in his army.",
+    "Many of his soldiers would desert and return home.",
+    "Harold knew he would have to let his army go home."
+  ],
+  options: {
+    "4": "Turn to page 4."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 61,
+  content: [
+    "Yes, Harold decides to place his army on the south coast. Hardrada might invade but because his claim to the throne is rather weak he could just as easily decide to invade and attack another country. Harold leaves Edwin and Morcar to defend the north in case Hardrada does attack.",
+    "Harold knows that William is planning to invade. He knows that William has been building ships and organising an army. William’s attempt to invade is serious. Harold knows that William will arrive sooner or later. It seems to be the most sensible plan to move his army to the south coast and wait for William.",
+    "Harold’s navy patrol the Channel in the hope of defeating William before he can even set foot on English soil."
+  ],
+  options: {
+    "24": "Continue on page 24."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 62,
+  content: [
+    "Another good omen was if it thought that God was on their side. People believed in God more strongly than today in the majority of cases. All sides prayed to God to help them in any battles. All sides thought they were in the right and that God would help them but if there was some proof of God’s support it would add to that side’s morale.",
+    "The European people of 1066 were Catholic (There was no Protestant religion in those days) and the leader of the Catholic Church was the Pope. The Pope was God’s representative on earth. If the Pope offered his banner to any army it was regarded that God would help them win the battle."
+  ],
+  options: {
+    "98": "If you think the Pope supports Harold Godwin turn to page 98.",
+    "70": "If you think the Pope supports Harald Hardrada turn to page 70.",
+    "32": "If you think the Pope supports William of Normandy turn to page 32."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 63,
+  content: [
+    "Yes, Tostig is trying to get the throne of England for himself but he needs to be clever. Tostig has already tried raiding the coast and has been unsuccessful. Tostig cannot beat his brother, Harold, on his own. He needs the support of someone else. However, the problem for Tostig is that whoever helps him defeat Harold will want to be king of England. Tostig will have to support Hardrada’s claim and then wait for his opportunity.",
+    "Tostig’s plan is to support Hardrada and be rewarded with his old earldom of Northumbria. Hardrada is already king of Norway and so cannot be in England and Norway at the same time. What Tostig hopes is that while Hardrada is in Norway he will appoint Tostig as regent in England.",
+    "The final bit of Tostig’s plan is that he will gather support in England and then prevent Hardrada from returning to England. This will allow Tostig to take the throne for himself."
+  ],
+  options: {
+    "92": "To see if Tostig’s plan succeeds turn to page 92."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 64,
+  content: [
+    "Harold was the son of earl Godwin who was the ruler of Wessex. His brothers ruled Kent and East Anglia and his sister married Edward the Confessor. He was, therefore, the brother-in-law of the previous king but there was no blood relationship between Harold and the throne."
+  ],
+  options: {
+    "7": "If you think Harold would be a good choice as king turn to page 7.",
+    "25": "If you think Harold would be a poor choice as king turn to page 25."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 65,
+  content: [
+    "Normal clothes for the majority of the soldiers would be little more than sacking. This would offer very little protection at all. A soldier wearing his normal clothes would not survive for very long in a battle."
+  ],
+  options: {
+    "104": "Return to page 104 and choose some more protection."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 66,
+  content: [
+    "Harold should have waited for his all his soldiers to arrive. Even if he had had his full army there was no need to start the fight. Harold was already king and so he already had the crown. If there was no battle at all then Harold would still be king. William could win the crown only if he beat and killed Harold.",
+    "If Harold could prevent William from leaving the area around Pevensey Bay then he could starve William. The Normans would not be able to live off the land and as winter advanced William would have difficulty in providing food by ship from across the Channel. William would have to retreat to Normandy. He would probably find it more difficult to raise as many troops the next year if you was going to try again.",
+    "Harold placed his army on a ridge known as Senlac Hill probably with the intention of waiting. However, William realised his best chance was to fight as soon as possible before Harold was able to gather more reinforcements.",
+    "Harold was drawn into battle straightaway."
+  ],
+  options: {
+    "96": "Turn to page 96."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 67,
+  content: [
+    "Yes, Harold married an English wife. A foreign princess would have been preferable but there were no suitable princesses when Harold could have married. Also, a foreign marriage would probably take a long time to negotiate.. Harold did not have time on his side.",
+    "Early in 1066 Harold married Aldyth. Aldyth was the sister of Edwin and Morcar who were the earls of Mercia and Northumbria. Mercia and Northumbria were the two earldoms not directly ruled by the Godwin family.",
+    "A marriage to Aldyth hopefully, would ensure the support of Edwin and Morcar. Even if Edwin and Morcar did not support Harold it should, at least, confirm their neutrality in the coming struggle against William, Hardrada and Tostig.",
+    "A marriage to Aldyth was probably the best that Harold could do under the circumstances.",
+    "In April 1066 Halley’s comet is seen in the sky. It was seen as an omen. An omen was a sign of what was going to happen in the future."
+  ],
+  options: {
+    "10": "If you think this is a good omen for Harold turn to page 10.",
+    "56": "If you think this is a good omen for William turn to page 56."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 68,
+  content: [
+    "At Stamford Bridge Harold, again, is in a difficult position. He had hope to prevent William from landing by attacking him at sea. He had at least hoped to be waiting on the south coast to give William a welcome that he did not want.",
+    "Instead Harold has been caught 250 miles away. William is able to come ashore unopposed. He will have unloaded all his supplies and organised all his soldiers before Harold can hope to attack.",
+    "What decision should Harold make?"
+  ],
+  options: {
+    "21": "If you think Harold marches south quickly turn to page 21.",
+    "34": "If you think Harold waits to reorganise his army at York turn to page 34.",
+    "95": "If you think Harold goes to London to reorganise his army turn to page 95.",
+    "51": "If you think Harold runs away and leaves the throne to William turn to page 51."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 69,
+  content: [
+    "No, the cavalry was not suited to start a battle against a well organised defensive position. A solid wall bristling with spears would be rather off-putting. The horse would stop even if the rider wanted to advance.",
+    "Cavalry was best used when they could break through, or round, the defensive line and then wheel to attack the enemy from the rear.",
+    "The cavalry would not be the first wave of attack."
+  ],
+  options: {
+    "90": "Return to page 90."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 70,
+  content: [
+    "The Pope did not give his support to Harald Hardrada. Europe was a Catholic but Hardrada was from Scandinavia. Many of the Vikings had not been converted to Christianity. The Vikings were pagans who believed in many Gods such as Wodin, Thor and Frej. Hardrada would have offered sacrifice to Thor, the God of war, and would have carried a banner with the symbols of Thor. Hardrada was not given nor would he want the banner of a Christian Pope."
+  ],
+  options: {
+    "62": "Return to page 62."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 71,
+  content: [
+    "Having accepted the fact that he needs to marry Edward would have liked to choose a Norman princess. He has been brought up in Normandy so this seems a natural choice. Unfortunately for Edward there are no suitable princesses in Normandy. Even if there was a Norman princess a marriage would bring no extra treaties or advantages to England. Edward’s mother, Emma, is a Norman and Edward is half Norman himself so there is relative peace and cooperation between England and Normandy.",
+    "As far as the main earls in England are concerned a Norman marriage is the last thing that they would wish to see.. Edward had already brought over Norman friends and advisers to his court. A Norman marriage would result in even greater Norman influence in England and with it a decrease in the amount of power of the English earls.",
+    "Siward nor Leofric have daughters. Edward is persuaded that he should marry Edith, the daughter of earl Godwin of Wessex."
+  ],
+  options: {
+    "77": "Turn to page 77."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 72,
+  content: [
+    "If Harold wants to place his army on the coast he will have to decide whether Hardrada or William will land first. Harold knows that Hardada and his Vikings already possess a large number of ships and so will not need as much preparation. However, Hardrada’s claim to the throne of England is rather weak. Hardrada is just as likely to go and attack anyone else.",
+    "Harold decides that William is likely to invade first but he does leave Edwin and Morcar to guard the north-east coast, Harold moves his army down to the south coast to wait for William."
+  ],
+  options: {
+    "61": "Turn to page 61."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 73,
+  content: [
+    "Harold decides to try to ride out the storm. To sail against storm force winds in a boat measuring about 20 metre long by 5 metres wide would almost certainly mean a broken rudder or even sinking. Harold takes down the sail and allows the boat to drift. After a storm tossed journey the boat runs aground in France and Harold is captured by Guy of Ponthieu.",
+    "Harold is then ‘recued’ by William of Normandy and Harold becomes William’s ‘guest’. William wants Harold to swear an oath. The terms of the oath were that Harold would use his influence and wealth to ensure that after the death of Edward the Confessor the kingdom of England should be confirmed in the possession of William, duke of Normandy."
+  ],
+  options: {
+    "19": "If you think Harold swears to support William turn to page 19.",
+    "91": "If you think Harold refuses to make the promise turn to page 91."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 74,
+  content: [
+    "Harald Hardrada was the king of the Vikings and was a distant relative of Canute who had been king of England.. Hardrada was an adult and an experienced ruler but he was living in Scandinavia, when hot fighting his enemies."
+  ],
+  options: {
+    "14": "If you think Hardrada would have been a good choice as king of England turn to page 14.",
+    "42": "If you think Hardrada would have been a poor choice as king of England turn to page 42."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 75,
+  content: [
+    "Rather foolishly the Saxons again fell for the trick. They dropped their shields and ran down the hill hoping for rich pickings. They suffered the same fate as the other section of the Saxon army that had left the safety of the shield wall. For the second time the Saxons in their ones and twos were slaughtered by the solid line of the Normans.",
+    "The Saxon line was now seriously weakened. The line was now spread thinly and gaps were beginning to appear. The battle was coming to an end."
+  ],
+  options: {
+    "107": "For the end of the Battle of Hastings turn to page 107."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 76,
+  content: [
+    "The Normans did not pursue those Saxons who were able to flee from the battlefield because the time was nearing 6.00 p.m. The light was fading and the Normans would not be familiar with the geography of the countryside.",
+    "Another reason was because the Normans were too tired for pursuit. They had been attacking the hill all day. They would not want to summon the extra energy for a chase in unfamiliar territory.",
+    "A third reason was that they did not need to chase after the Saxons to rob them of their valuables, They had a far greater prize. William had promised them land confiscated from Harold and the defeated Saxons. The rewards had already been won.",
+    "Harold had been killed at the Battle of Hastings on 14th October 1066 but what happened to his body?"
+  ],
+  options: {
+    "38": "If you think William allowed Harold’s body to be taken away turn to page 38.",
+    "106": "If you think Harold’s body was left on the battlefield turn to page 106."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 77,
+  content: [
+    "There have already been rumours that Godwin would like the throne of England but he had no royal blood. His sons have no royal blood so Godwin cannot rightfully be the father of a king. However, he could be the grandfather of a king if his daughter, Edith, marries Edward the Confessor and they have a son. This child would have royal blood and would be the rightful heir to the throne and he would be a Godwin.",
+    "But would not a marriage to Edith give Godwin even more power? This seems a dangerous situation for Edward who might become a puppet king in the hands of Godwin.",
+    "If Edward married a Norman princess this would ruin Godwin’s ambitions. Godwin might decide that his future lay in seizing the throne by force. With the support of his sons Godwin was far stronger than Edward. Neither could Edward count on much support from the other earls who did not wish to see a Norman queen of England.",
+    "To actually join forces with the Godwins by marrying into the family was probably Edward’s safest move. He would be able to keep an eye and an ear out for possible plots. Also, Edward was needed by Godwin to produce an heir. This would guarantee Edward’s safety from the Godwins.",
+    "However, danger would return to Edward as soon as Edith produced a son. Edward would no longer be required as Godwin could act as regent for his infant grandson.",
+    "Edward’s solution seems to be to marry Edith but to not have any children.",
+    "In 1045 Edward ages 40 marries Edith aged 21, the daughter of earl Godwin."
+  ],
+  options: {
+    "55": "Turn to page 55."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 78,
+  content: [
+    "No, William did not send his men-at-arms first. They would find it difficult to attack equally armed soldiers in a strong defensive position. If possible William would try to soften up the front line of the enemy before sending in his men-at-arms."
+  ],
+  options: {
+    "90": "Return to page 90 and try a different attack."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 79,
+  content: [
+    "William was not English and was not living in England which was a serious disadvantage. However, in most other respects he would have been a good choice as king of England."
+  ],
+  options: {
+    "50": "To find out why William would have been a good choice turn to page 50."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 80,
+  content: [
+    "If Hardrada won the battle of Stamford Bridge and killed Harold then Harold would not have been able to fight the Battle of Hastings."
+  ],
+  options: {
+    "40": "To find out what happened at Stamford Bridge turn to page 40."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 81,
+  content: [
+    "A marriage to a foreign princess would be the greatest advantage to Harold. A foreign princess would bring royal blood to the House of Godwin. A foreign princess would also bring, hopefully, military support from her homeland. If her homeland was in France William would not be able to concentrate his attention on England. He would need to keep one eye on a possible attack on Normandy.",
+    "Unfortunate for Harold there was no suitable princess for him to marry. Even if there was it would probably have taken too long to arrange a marriage. Certainly Harold could not afford to leave the country when danger of invasion threatened. ",
+    "Foreign countries might not have wanted to make an alliance with Harold who had no royal blood."
+  ],
+  options: {
+    "87": "Return to page 87."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 82,
+  content: [
+    "No. Rather foolishly the Saxons had not learned their lesson. Again they left their strong defensive position and chased after the Normans."
+  ],
+  options: {
+    "75": "To find out what happens to the Saxons this time continue on page 75."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 83,
+  content: [
+    "William did not march slowly in a straight line but did so slowly in a zig-zag route. Marching this extra distance to London would not give his soldiers any rest. If he wanted to let his soldiers recover completely then it would have been better to wait at Hastings for a number of days."
+  ],
+  options: {
+    "16": "Return to page 16."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 84,
+  content: [
+    "William of Normandy was not the closest relation to Edward the Confessor but he was Edward’s cousin.",
+    "William was a Norman and Edward had spent much of his early life in Normandy.",
+    "William was an adult and an experienced ruler but he was the ruler of Normandy, not England."
+  ],
+  options: {
+    "50": "If you think that William would have been a good choice as king of England turn to page 50.",
+    "79": "If you think William would have been a poor choice as king of England turn to page 79."
+  },
+  image_url: "/williamcousin.png",
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 85,
+  content: [
+    "One hundred and seventy ships would not have been enough for William’s army of about 8,000 soldiers. A typical ship in 1066 would have been about 25 metres long and 5 metres at its widest. From the keel to the gunwale would have been about 2 metres. A ship could carry about 30 soldiers as maximum. As well as soldiers William’s army also contained horses."
+  ],
+  options: {
+    "26": "Return to page 26 and build some more ships."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 86,
+  content: [
+    "Armour may have been worn by one or two rich nobles. The very poor would have worn their normal clothes. The lesser soldiers would have worn leather jackets which might deflect a glancing blow. The majority of those at the battle would wear a helmet with the characteristic nose guard and a hauberk. A hauberk was a mail shirt which reached down to the knees from the neck. It was made of small metal rings. This protection was flexible and so the wearer was able to move around easily. It would also offer considerable protection against sword blows. The main wounds that soldiers received would be from where a blow from a sword, axe or from an arrow that had pushed the metal rings into the soldier’s body.",
+    "The hauberk appears to be the most usual protection and was worn by the majority of the soldiers at the Battle of Hastings."
+  ],
+  options: {
+    "101": "To begin the battle turn to page 101."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 87,
+  content: [
+    "Harold Godwin realises that he is not going to be allowed to keep the throne peacefully. He knows that he is going to have to fight for the crown that he has seized.",
+    "If his kingdom is going to be threatened it would be sensible to make alliances and usually the best way to arrange an alliance was to arrange a marriage.",
+    "Harold Godwin was 46 when he came to the throne but he had not married. Heere was a chance for Harold to make an alliance."
+  ],
+  options: {
+    "67": "If you think that Harold marries an English princess turn to page 67.",
+    "81": "If you think that Harold marries a foreign princess turn to page 81.",
+    "47": "If you think that Harold remains unmarried turn to page 47."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 88,
+  content: [
+    "By putting half his army on the north-east coast and the other half on the south coast Harold can be sure to attack the invaders as they land. However, Harold’s army will be about the same size as Hardrada’s and the same size as William’s. Therefore, if Harold splits his army in half both halves will be heavily outnumbered and so Harold’s two armies will both be defeated."
+  ],
+  options: {
+    "18": "This seems to be a bad plan. Return to page 18 and draw up another plan."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 89,
+  content: [
+    "Although, it is said, blood is thicker than water Harold decided to join with the Northumbrians against his brother Tostig. The rebels could draw on a considerable force from Mercia and Northumbria and Harold could not be sure of victory. Civil war could easily ruin the House of Godwin. Also, Tostig seems to have become Edward’s favourite and there was a possibility, in Harold’s eyes, that Edward might choose Tostig as his successor.",
+    "By joining the rebel side Harold could ensure the removal of on of the obstacles that lay between him and the throne.",
+    "There was also valuable propaganda to be made from the incident. By chasing away Tostig Harold could claim to be an honest law-abiding citizen who stood against cruelty and tyranny. Such characteristics would indeed advance his own claim to the throne if Edward remained childless.",
+    "Tostig fled te country with his wife and family. He crossed the Channel and settled at St Omer as a guest of his brother-in-law Count Baldwin of Flanders.",
+    "Tostig is not finished yet. He will soon reappear."
+  ],
+  options: {
+    "44": "Continue on page 44."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 90,
+  content: [
+    "When William had all his troops at Hastings there were three types of soldier. William’s army consisted of archer, cavalry and men-at-arms. Men-at-arms were the infantry who carried swords and axes and would do the brunt of the fighting.",
+    "Which of these three groups would William use first?"
+  ],
+  options: {
+    "31": "If you think William sent in the archers first turn to page 31.",
+    "69": "If you think William sent in the cavalry first turn to page 69.",
+    "78": "If you think William sent in the men-at-arms first turn to page 78."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 91,
+  content: [
+    "If Harold swears the oath he immediately gives up his own claim to the throne of England. An oath will make him William’s vassal. Harold could swear the oath to gain his release and then deny the oath. However, the oath was sworn on holy relics and so it would be a promise to God. Breaking a promise to God was considered the worst possible crime. Harold refuses to sign the oath.",
+    "William is angry and so Harold remains William’s ‘guest’. Now the guestroom become the dungeon. Harold’s cell is damp, dark and small. His furniture is an armful of straw and his companions are rats.",
+    "While Harold refuses to swear the oath he is given less and less food. Weakened by the unhygienic conditions Harold starves to death.",
+    "Therefore, there is no Battle of Hastings on 14th October 1066."
+  ],
+  options: {
+    "55": "Return to page 55 and try again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 92,
+  content: [
+    "When Harold hears that Hardrada and Tostig have landed in Yorkshire and have defeated Edwin and Morcar at the Battle of Fulford he acts quickly.",
+    "Harold rapidly recalls his army and marches north. The distance between the south coast and York is about 250 miles yet within five days of the Battle of Fulford Harold has reached Stamford Bridge.",
+    "Before the battle Hardrada had promised that he would take the whole of England from Harold. Harold has replied that he would not let Hardrada have the whole of England but he would be generous and allow Hardrada seven foot of English soil. What Harold meant was that he was going to kill Hardrada and rather than burying him in six feet of English soil he would give him seven feet because Hardrada was very tall."
+  ],
+  options: {
+    "80": "If you think Hardrada won the Battle of Stamford Bridge turn to page 80.",
+    "40": "If you think Hardrada received just seven feet of English soil turn to page 40."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 93,
+  content: [
+    "There is not much point in electing Edgar the Atheling or Harald Hardrada or William of Normandy or even Tostig. Harold Godwin has the throne in his hands and the crown on his head. It would be difficult to take the throne away from him especially when he has the backing of the majority of the Anglo-Saxons."
+  ],
+  options: {
+    "59": "Turn to page 59."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 94,
+  content: [
+    "Yes, this is the correct answer. The Witan did not have time to choose the next king when Edward the Confessor died. Edward died on 5th January 1066 and immediately Harold Godwin seized the throne and proclaimed himself king."
+  ],
+  options: {
+    "59": "If you think the Witan accept Harold turn to page 59.",
+    "93": "If you think the Witan refuse to accept Harold and elect someone else as king turn to page 93."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 95,
+  content: [
+    "Marching back to London is probably the best idea. Harold has not established himself firmly yet on the throne and it would not be sensible to stay away for too long. Harold was probably setting out from Stamford Bridge even before he heard that William had landed.",
+    "Harold needed to recruit troops on his march south but the main rallying point should have been London so that his troops would not have to march the whole length of the country before giving battle to William.",
+    "Harold, also, needed to give his soldiers time to recover from the Battle of Stamford Bridge. Although this decision seems to be the correct move Harold does not choose this plan."
+  ],
+  options: {
+    "68": "Return to page 68 and choose another plan."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 96,
+  content: [
+    "Harold has reached the ridge known as Senlac Hill by 13th October. The Battle of Hastings would begin the next day.",
+    "The battle began on 14th October 1066."
+  ],
+  options: {
+    "6": "If you think the battle began at 5.00 a.m. turn to page 6.",
+    "49": "If you think the battle began at 9.00 a.m. turn to page 49.",
+    "58": "If you think the battle began after lunch turn to page 58."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 97,
+  content: [
+    "An invading army is at its weakest as it is landing because not all the ships will arrive at exactly the same time. Also, the invading army will have to wade ashore. They will also be busy unloading the ships. All this means that the invaders will be rather disorganised until everything and everybody has been disembarked from the ships. It would, therefore, be a good time to attack the invaders. Harold would like to be on the beach waiting for the invaders. If he waits in the middle of England to see who lands first he will lose the advantage of being able to attack the invaders as they come ashore."
+  ],
+  options: {
+    "18": "Return to page 18 and try again."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 98,
+  content: [
+    "The Pope did not support Harold Godwin. England was further away from Rome than Normandy was and so it was easier for William to contact the Pope first. William told the Pope that Harold had broken his oath and so the Pope gave his banner to William."
+  ],
+  options: {
+    "30": "Continue on page 30."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 99,
+  content: [
+    "As William was coming ashore it was said that he tripped and fell flat on his face in a muddy, marshy area. This was regarded as an omen, like Halley’s comet but, unlike Halley’s comet this was seen as a bad omen. William’s men thought that if he fell over with not an enemy in sight then he would have little chance of winning any battle for the throne of England.",
+    "The Normans were so disheartened that they nearly turned round and sailed home. William needed to act quickly.",
+    "William looked at his mud stained clothes and said, 'Look, England comes to me. I already have half of England.'",
+    "William meant that he was destined to rule England. He had changed a bad omen into a good omen. The Normans now believed that it was another sign that they would win the forthcoming battle."
+  ],
+  options: {
+    "68": "Continue on page 68"
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 100,
+  content: [
+    "Many soldiers in the army would wear a type of leather jacket. It would probably be sleeveless and reach down to the knees. This was the ‘uniform’ of the poorer soldiers and was probably worn at other times than just fighting. The leather, obtained from the skins of animals, would not stop a direct hit by an arrow, axe or sword. However, the leather jacket was thick enough to provide some protection against a glancing blow.",
+    "Leather was worn by lesser soldiers. The majority of the soldiers would wear slightly more protection."
+  ],
+  options: {
+    "86": "Turn to page 86."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 101,
+  content: [
+    "Shortly after 9.00 a.m. on 14th October 1066 the Battle of Hastings began. The archers had fired their arrows and now the men-at-arms began their climb to the ridge where Harold’s army stood behind their shield wall. William’s army had been divided into three sections. The Normans took the centre while his allies, the Bretons, formed the left wing and the Flemings formed the right wing.",
+    "William’s army crashed into the Saxons but Harold’s army held firm. The Normans then retreated a little in order to reform so that they could charge again at the Saxon line. This method was repeated several times as the shield wall held firm. William hoped that his fitter, fresher troops would eventually cause a breach in the shield wall which his cavalry could exploit.",
+    "On one occasion the Bretons, on the left wing retreated more quickly than usual and the Saxons, behind their shield wall thought the Bretons were running away."
+  ],
+  options: {
+    "108": "If you think the Saxons went to help their fellow soldiers turn to page 108.",
+    "28": "If you think the Saxons ran down the hill to chase the Bretons turn to page 28."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 102,
+  content: [
+    "The Normans did not pursue the Saxons that fled from the Battle of Hastings."
+  ],
+  options: {
+    "76": "To find out why turn to page 76."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 103,
+  content: [
+    "William marched in a zig-zag route on his way to London. He would certainly mop up any resistance that he met on the way but this was not his main concern as he set out. William had dealt with the Saxons at Hastings and there would be no organised resistance between Hastings and London.",
+    "Neither was William’s route chosen as an opportunity to see the countryside."
+  ],
+  options: {
+    "16": "Return to page 16."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 104,
+  content: [
+    "Having drawn up his line of battle and decided on his tactics William is ready to fight.",
+    "What do you think the soldiers on both sides would wear for battle. They did not have uniforms in 1066 so they would not all be dressed the same but what would the majority wear?"
+  ],
+  options: {
+    "109": "If you think the majority wore armour turn to page 109.",
+    "86": "If you think the majority wore chain mail turn to page 86.",
+    "100": "If you think the majority wore leather jackets turn to page 100.",
+    "65": "If you think the majority wore their usual clothes turn to page 65."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 105,
+  content: [
+    "Unfortunately for the Saxons if the race was on there were no prizes. The Bretons were not running away. They had retreated to the bottom of Senlac Hill but had then reformed. As a section of the Saxons left their shield wall and charged down the hill they did not advance in a steady line but in a mad dash. Their momentum don the hill was too great to stop suddenly. The Saxons, in their ones and twos, ran into the solid, reformed line of the Bretons. That section of the Saxon army was cut down. None escaped to reclimb the hill to their fellow countrymen.",
+    "The battle continued as before with William still finding it difficult breaking through the Saxon shield wall. Sometime later William’s horse was killed and a rumour spread through the Normans that William had been killed. William quickly found another horse, raised his helmet and rode along the battle line. The Normans regained heart but William had noticed that his line wavered when the soldiers thought that he was dead.",
+    "William now decided to plan a feigned retreat. The plan was for his soldiers to retreat quickly down the hill in the hope that the Saxons would think that the Normans were running away. When the Bretons had retreated quickly the Saxons had been drawn out from behind their shield wall."
+  ],
+  options: {
+    "75": "If you think the Saxons fell for the trick and chased after the Normans turn to page 75.",
+    "82": "If you think the Saxons learned their lesson from the first time turn to page 82."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 106,
+  content: [
+    "Yes, Harold’s body was left on the battlefield. After the battle it is thought that Edith Swan Neck asked William for Harold’s body but he refusd. William refused for two reasons.",
+    "If Harold’s body was buried by Edith then the grave might become a place of worship for the Saxons and if it did become a place of worship it could easily become a rallying point for any Saxon unrest against the Normans.",
+    "The other reason was because William regarded Harold as an oath breaker for failing to support William’s claim to the throne. An oath breaker, in William’s eyes, was a common criminal and as such deserved no more than an unmarked grave."
+  ],
+  options: {
+    "16": "Continue on page 16."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 107,
+  content: [
+    "Harold’s army had suffered great losses. He still had his most disciplined soldiers called Housecarls but they were now heavily outnumbered. They continued to fight bravely but now William ordered his archers to alter their angle of attack. The Saxons were caught unawares by the arrows falling steeply from the sky and many of the Housecarls were struck down.",
+    "The Bayeux tapestry, which tells the story of the events leading up to and including the battle in embroidered pictures shows a soldier with an arrow inhis eye.",
+    "For many years it was believed that this was Harold. It is now generally agreed that the unfortunate soldier with an arrow in the eye is not Harold, it is a picture to illustrate that the Norman archers played a vital role in the battle.",
+    "It is now thought that Harold was hacked to death by axe and sword blows. Harold fell in the battle at around 5.00 p.m. as William’s cavalry broke through the remaining Saxons in the shield wall.",
+    "With Harold dead the battle ended with those surviving Saxons turning to flee from the battlefield."
+  ],
+  options: {
+    "102": "If you think the Normans chased after the Saxons turn to page 102.",
+    "76": "If you think the Normans offered no pursuit turn to page 76."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 108,
+  content: [
+    "No, the Saxons dropped their shields and raced down the hill. They thought William was beaten and was on the retreat to his ships."
+  ],
+  options: {
+    "28": "To find out why they wanted to chase William turn to page 28."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 109,
+  content: [
+    "Full scale armour had not been thoroughly developed yet. Also, a full set of armour would cost a large amount of money and so the nobles and barons only would be able to afford to pay. Another difficulty is that armour would be very heavy, very hot and very slow to move around in. If you fell over it was almost impossible for you to stand up again without considerable help."
+  ],
+  options: {
+    "104": "Take off your armour and return to page 104."
+  },
+  book: battleOfHastings
+)
+
+Page.create(
+  page_number: 110,
+  content: [
+    "Yes, William was waiting to be elected by the Witan. In January 1066 Harold needed to act quickly. He had two main rivals for the throne and the Witan might elect one of those rivals. Harold needed to seize the throne first to ensure that the Witan would elect him.",
+    "William, on the other hand, was in a different position after 14th October 1066. Of the four contenders to the throne at the beginning of the year Hardrada had been killed at the Battle of Stamford Bridge. Harold had been killed at the Battle of Hastings. Edgar the Atheling was still too young to rule the country yet. This left only William. The Witan had no choice, sooner or later they would have to elect William. William could afford to wait.",
+    "It was important to William to wait to be elected rather than to seize the throne because by seizing the throne he was giving the Saxons an excuse to rebel. By being chosen by the Witan he could claim that he was the elected representative of the Saxons.",
+    "The Witan duly elected William. He entered London peacefully and on 25th December 1066 William the Conqueror was crowned as king William 1of England.",
+    "1066 was a year when three kings wore the crown of England.",
+    "1066 was the year when William changed from being a duke to become a king.",
+    "1066 was the year when the Norman and Saxon races began to mix and the Norman line of kings began."
+  ],
+  options: {
+    "": "The end – or is it the beginning?"
+  },
+  book: battleOfHastings
 )

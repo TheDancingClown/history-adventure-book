@@ -29,7 +29,7 @@ const cover = {
 
 const link = {
   textDecoration: 'none',
-  color: 'black',
+  color: 'slateblue',
   display: 'flex',
   alignItems:'center',
   justifyContent: 'center',

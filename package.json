@@ -1,6 +1,9 @@
 {
   "name": "adventure-book",
   "private": true,
+  "scripts": {
+    "heroku-prebuild": "npm install --dev"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.12.13",
     "@rails/actioncable": "^6.0.0",

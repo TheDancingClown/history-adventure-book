@@ -6,7 +6,7 @@ import { styles } from './styles';
 
 const Books = () => {
   const [books, setBooks] = useState([])
-  const shelfLength = books.length * 115 + 49
+  const shelfLength = books.length * 115 + 49.5
 
   useEffect(() => {
     axios.get("/api/books.json")
